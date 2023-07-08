@@ -46,3 +46,6 @@ TagManager:
   - name: Danmu
     uniqueID: 609804995
     locked: 0
+  - name: Player
+    uniqueID: 2347128055
+    locked: 0
