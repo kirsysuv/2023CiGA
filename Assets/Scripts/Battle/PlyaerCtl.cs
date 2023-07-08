@@ -12,6 +12,7 @@ public class PlyaerCtl : MonoBehaviour
     public float Energy;
     public const float Max_Energy = 1000;
 
+    public BloodUICtl blood;
     public bool unDamagable = false;
 
     private Rigidbody2D rb;
@@ -36,6 +37,7 @@ public class PlyaerCtl : MonoBehaviour
         spriteRenderer = GetComponent<SpriteRenderer>();
         blinkSequence = DOTween.Sequence();
         Energy = 0;
+        blood.BloodInit();
 
         // 设置起始透明度为 0
         spriteRenderer.color = new Color(spriteRenderer.color.r, spriteRenderer.color.g, spriteRenderer.color.b, 1f);
@@ -46,9 +48,28 @@ public class PlyaerCtl : MonoBehaviour
             .SetLoops(-1).SetAutoKill(false); // 无限循环
     }
 
-    private void DisableTouch()
+
+    /// <summary>
+    /// TODO 根据碰撞体调用角色受伤代码
+    /// </summary>
+    public void Hurted()
+    {
+        blood.BloodHurted();
+        unDamagable = true;
+        blinkSequence.Play();
+        DOTween.Sequence().AppendInterval(2f).OnComplete(endUndamagable).Play();
+
+    }
+
+    private void endUndamagable()
     {
 
+        if (Energy != Max_Energy)
+        {
+            unDamagable = false;
+            blinkSequence.Pause();
+            spriteRenderer.color = new Color(spriteRenderer.color.r, spriteRenderer.color.g, spriteRenderer.color.b, 1f);
+        }
     }
 
     private bool canTouch()
@@ -58,7 +79,7 @@ public class PlyaerCtl : MonoBehaviour
 
     private void Update()
     {
-        // Touch
+
         if (Input.GetKeyDown(KeyCode.J) || (Input.GetKeyDown(KeyCode.Space)))
         {
             //Debug.Log("按下Touch" + GameObject.Find("BattleUI").GetComponent<BattleUICtl>().Energy);
@@ -68,6 +89,7 @@ public class PlyaerCtl : MonoBehaviour
                 //无敌状态下按下
                 Debug.Log("播放攻击Boss动画");
 
+                //TODO 特殊攻击
                 GameObject.Find("BattleCtl").GetComponent<BattleCtl>().RestartScene();
                 return;
             }
@@ -133,7 +155,7 @@ public class PlyaerCtl : MonoBehaviour
         float moveVertical = Input.GetAxisRaw("Vertical");
 
         // 计算移动方向和速度
-        Vector2 movement = new Vector2(moveHorizontal, moveVertical).normalized * moveSpeed*Time.deltaTime;
+        Vector2 movement = new Vector2(moveHorizontal, moveVertical).normalized * moveSpeed * Time.deltaTime;
 
 
 

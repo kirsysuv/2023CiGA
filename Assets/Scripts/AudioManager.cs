@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Audio;
 
-public class AudioManager : SingletonMonoBehaviour<AudioManager> 
+public class AudioManager : SingletonMonoBehaviour<AudioManager>
 {
     //音频管理器 存储所有的音频并且可以播放和停止
     [Serializable]
@@ -14,7 +14,7 @@ public class AudioManager : SingletonMonoBehaviour<AudioManager>
 
         [Header("音频分组")] public AudioMixerGroup outputGroup;
 
-        [Header("音频音量")] [Range(0, 1)] public float volume;
+        [Header("音频音量")][Range(0, 1)] public float volume;
 
         [Header("音频是否自启动")] public bool PlayOnAwake;
 
@@ -29,21 +29,21 @@ public class AudioManager : SingletonMonoBehaviour<AudioManager>
     public static string Effect_TOUCH = "TOUCH";
     public static string Effect_Change = "消弹转换触发";
     public static string BGM_Fight = "战斗部分BGM";
-    
-    
-    public static string BGM_Novel = "视觉小说BGM";
-
-    public static string Effect_BossHited = "对BOSS造成伤害";
-    public static string Effect_NovelClick = "视觉小说部分点击选项音效";
-    public static string Effect_PlayerHited = "玩家受到伤害";
-    public static string Effect_UIClick = "游戏内UI按下音效";
     public static string Effect_Victory = "战斗胜利";
     public static string Effect_Failed = "战斗失败";
+    public static string Effect_UIClick = "游戏内UI按下音效";
+
+
+    public static string BGM_Novel = "视觉小说BGM";
+    public static string Effect_NovelClick = "视觉小说部分点击选项音效";
+
+    public static string Effect_BossHited = "对BOSS造成伤害";
+    public static string Effect_PlayerHited = "玩家受到伤害";
 
 
     private string _current = "";
 
-  
+
 
     private void Start()
     {
@@ -79,7 +79,7 @@ public class AudioManager : SingletonMonoBehaviour<AudioManager>
     {
         PlayAudio(name, false, false);
     }
-    
+
     /// <summary>
     /// 是否循环，是否打断当前播放
     /// </summary>
@@ -114,10 +114,14 @@ public class AudioManager : SingletonMonoBehaviour<AudioManager>
 
     private static void StopCurrent()
     {
-        if (Instance.audioDic.ContainsKey(Instance._current))
+        foreach (AudioSource source in Instance.audioDic.Values)
         {
-            Instance.audioDic[Instance._current].Stop();
+            source.Stop();
         }
+        //if (Instance.audioDic.ContainsKey(Instance._current))
+        //{
+        //    Instance.audioDic[Instance._current].Stop();
+        //}
     }
 
 

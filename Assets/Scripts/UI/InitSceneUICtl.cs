@@ -19,11 +19,15 @@ public class InitSceneUICtl : MonoBehaviour
 
     private void EndGame()
     {
+        AudioManager.PlayEffect(AudioManager.Effect_UIClick);
+
         Application.Quit();
     }
 
     private void StartGame()
     {
+        AudioManager.PlayEffect(AudioManager.Effect_UIClick);
+
         SceneTransition.Instance.StartFadeIn(Const.BattleGuideScene);
     }
 
