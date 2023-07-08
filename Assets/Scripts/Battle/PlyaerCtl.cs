@@ -65,12 +65,14 @@ public class PlyaerCtl : MonoBehaviour
         // Touch
         if (Input.GetKeyDown(KeyCode.J) || (Input.GetKeyDown(KeyCode.Space)))
         {
-            Debug.Log("按下Touch" + GameObject.Find("BattleUI").GetComponent<BattleUICtl>().Energy);
+            //Debug.Log("按下Touch" + GameObject.Find("BattleUI").GetComponent<BattleUICtl>().Energy);
 
             if (unDamagable)
             {
                 //无敌状态下按下
                 Debug.Log("播放攻击Boss动画");
+                SceneTransition.Instance.StartFadeIn(
+                GameObject.Find("BattleCtl").GetComponent<BattleCtl>().currentScene);
             }
             if (!canTouch())
             {
