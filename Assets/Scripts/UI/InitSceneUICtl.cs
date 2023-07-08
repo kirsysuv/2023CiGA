@@ -14,6 +14,7 @@ public class InitSceneUICtl : MonoBehaviour
     {
         start.onClick.AddListener(StartGame);
         end.onClick.AddListener(EndGame);
+        AudioManager.PlayBgm(AudioManager.BGM_MainManu);
     }
 
     private void EndGame()

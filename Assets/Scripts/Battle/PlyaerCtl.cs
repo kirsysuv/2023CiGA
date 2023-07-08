@@ -77,7 +77,7 @@ public class PlyaerCtl : MonoBehaviour
                 //还用不了
                 return;
             }
-
+            AudioManager.PlayEffect(AudioManager.Effect_TOUCH);
             GameObject.Find("BattleUI").GetComponent<BattleUICtl>().OnTouchDown();
 
             Debug.Log("冷却结束");
@@ -106,6 +106,9 @@ public class PlyaerCtl : MonoBehaviour
                     {
                         // 1000能量 = 全不透明
                         Debug.Log("吸取弹幕获取能量， 200一个." + Energy);
+
+                        AudioManager.PlayEffect(AudioManager.Effect_Change);
+
                         float currentPct = Energy / Max_Energy;
                         Energy = math.min(Energy + 200, Max_Energy);
                         float newPct = Energy / Max_Energy;

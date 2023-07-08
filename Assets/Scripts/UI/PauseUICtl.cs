@@ -21,11 +21,16 @@ public class PauseUICtl : MonoBehaviour
 
     private void Exit()
     {
+        AudioManager.PlayEffect(AudioManager.Effect_UIClick);
+
         Application.Quit();
     }
 
     private void Return()
     {
+        AudioManager.PlayEffect(AudioManager.Effect_UIClick);
+
+
         Debug.Log("返回标题");
         root.SetActive(false);
         image.SetActive(false);
@@ -35,6 +40,9 @@ public class PauseUICtl : MonoBehaviour
 
     private void Continue()
     {
+        AudioManager.PlayEffect(AudioManager.Effect_UIClick);
+        
+        
         Debug.Log("继续游戏");
         root.SetActive(false);
         image.SetActive(false);
