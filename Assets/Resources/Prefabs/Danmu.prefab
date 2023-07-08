@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 6843494407466106636}
   - component: {fileID: 8593328343431540813}
   - component: {fileID: 6834859618946708499}
+  - component: {fileID: 7030598619686467787}
   m_Layer: 0
   m_Name: Danmu
   m_TagString: Danmu
@@ -33,7 +34,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &8651103625109085413
 SpriteRenderer:
@@ -156,10 +157,23 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2469931363733834098}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2f6a9ec1128502944a6ff07ff0846526, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   BulletSpeed: 30
   DelayTime: 0
+--- !u!114 &7030598619686467787
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2469931363733834098}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7cced0c9e7ca1044ba9278b06c16236c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gainEnergy: 0

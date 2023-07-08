@@ -25,7 +25,6 @@ public class BattleUICtl : MonoBehaviour
         low.gameObject.SetActive(false);
         FullIcon.gameObject.SetActive(false);
         FullText.gameObject.SetActive(false);
-        Touch = GameObject.Find("Touch").GetComponent<SpriteRenderer>();
     }
 
     // Update is called once per frame
@@ -33,6 +32,16 @@ public class BattleUICtl : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.J))
         {
+            if (Energy < Max_Energy )
+            {
+                return;
+            }
+            if (GameObject.Find("Chara").GetComponent<PlyaerCtl>().unDamagable)
+            {
+                //无敌状态
+                Debug.Log("无敌状态下攻击，在BattleUICtl处理");
+                return;
+            }
             OnTouchDown();
         }
     }
@@ -44,7 +53,7 @@ public class BattleUICtl : MonoBehaviour
 
     public void ColdDown(float deltime)
     {
-        Debug.Log("获得能量:" + deltime);
+        //Debug.Log("获得能量:" + deltime);
         Energy = math.min(Energy + deltime, Max_Energy);
         UpdateView();
 
@@ -62,6 +71,8 @@ public class BattleUICtl : MonoBehaviour
         if (Energy < Max_Energy)
         {
             low.gameObject.SetActive(true);
+            FullText.gameObject.SetActive(false);
+            FullIcon.gameObject.SetActive(false);
         }
         if (Energy == Max_Energy)
         {
@@ -70,7 +81,7 @@ public class BattleUICtl : MonoBehaviour
             FullIcon.gameObject.SetActive(true);
         }
         float pct = Energy / Max_Energy;
-        Debug.Log(Energy + " " + pct);
+        //Debug.Log(Energy + " " + pct);
         ProgressL.fillAmount = pct;
         ProgressR.fillAmount = pct;
         LineL.fillAmount = pct;
