@@ -77,6 +77,9 @@ public class PlyaerCtl : MonoBehaviour
                 //还用不了
                 return;
             }
+
+            GameObject.Find("BattleUI").GetComponent<BattleUICtl>().OnTouchDown();
+
             Debug.Log("冷却结束");
             //View
             Touch.SetActive(true);

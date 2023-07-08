@@ -32,20 +32,20 @@ public class BattleUICtl : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.J))
-        {
-            if (Energy < Max_Energy)
-            {
-                return;
-            }
-            if (GameObject.Find("Chara").GetComponent<PlyaerCtl>().unDamagable)
-            {
-                //无敌状态
-                Debug.Log("无敌状态下攻击，在BattleUICtl处理");
-                return;
-            }
-            OnTouchDown();
-        }
+        //if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.J))
+        //{
+        //    if (Energy < Max_Energy)
+        //    {
+        //        return;
+        //    }
+        //    if (GameObject.Find("Chara").GetComponent<PlyaerCtl>().unDamagable)
+        //    {
+        //        //无敌状态
+        //        Debug.Log("无敌状态下攻击，在BattleUICtl处理");
+        //        return;
+        //    }
+        //    OnTouchDown();
+        //}
     }
     private void FixedUpdate()
     {
@@ -58,13 +58,28 @@ public class BattleUICtl : MonoBehaviour
         //Debug.Log("获得能量:" + deltime);
         Energy = math.min(Energy + deltime, Max_Energy);
         UpdateView();
-
+        if (Energy < Max_Energy)
+        {
+            canTouch = false;
+        }
+        else
+        {
+            canTouch = true;
+        }
     }
 
     public void OnTouchDown()
     {
         Energy = 0;
         UpdateView();
+        if (Energy < Max_Energy)
+        {
+            canTouch = false;
+        }
+        else
+        {
+            canTouch = true;
+        }
     }
 
     private void UpdateView()
@@ -75,16 +90,13 @@ public class BattleUICtl : MonoBehaviour
             low.gameObject.SetActive(true);
             FullText.gameObject.SetActive(false);
             FullIcon.gameObject.SetActive(false);
-            canTouch = false;
-            Debug.Log("没满");
+
         }
         if (Energy == Max_Energy)
         {
             low.gameObject.SetActive(false);
             FullText.gameObject.SetActive(true);
             FullIcon.gameObject.SetActive(true);
-            canTouch = true;
-            Debug.Log("满了");
         }
         float pct = Energy / Max_Energy;
         //Debug.Log(Energy + " " + pct);
