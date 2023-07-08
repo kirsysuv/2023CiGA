@@ -54,12 +54,11 @@ public class PlyaerCtl : MonoBehaviour
 
     private bool canTouch()
     {
-        return GameObject.Find("BattleUI").GetComponent<BattleUICtl>().Energy == 0;
+        return GameObject.Find("BattleUI").GetComponent<BattleUICtl>().canTouch;
     }
 
     private void Update()
     {
-
 
 
         // Touch
@@ -71,11 +70,14 @@ public class PlyaerCtl : MonoBehaviour
             {
                 //无敌状态下按下
                 Debug.Log("播放攻击Boss动画");
-                SceneTransition.Instance.StartFadeIn(
-                GameObject.Find("BattleCtl").GetComponent<BattleCtl>().currentScene);
+
+                GameObject.Find("BattleCtl").GetComponent<BattleCtl>().RestartScene();
+                return;
             }
             if (!canTouch())
             {
+                Debug.Log("还用不了Touch");
+                //还用不了
                 return;
             }
             Debug.Log("冷却结束");

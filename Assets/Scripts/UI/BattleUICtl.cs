@@ -16,6 +16,7 @@ public class BattleUICtl : MonoBehaviour
     public Image FullText;
     public Image low;
     public SpriteRenderer Touch;
+    public bool canTouch = false;
 
     public float ColdDownTime = 2.5f;
 
@@ -25,6 +26,7 @@ public class BattleUICtl : MonoBehaviour
         low.gameObject.SetActive(false);
         FullIcon.gameObject.SetActive(false);
         FullText.gameObject.SetActive(false);
+        Energy = 0;
     }
 
     // Update is called once per frame
@@ -73,12 +75,14 @@ public class BattleUICtl : MonoBehaviour
             low.gameObject.SetActive(true);
             FullText.gameObject.SetActive(false);
             FullIcon.gameObject.SetActive(false);
+            canTouch = false;
         }
         if (Energy == Max_Energy)
         {
             low.gameObject.SetActive(false);
             FullText.gameObject.SetActive(true);
             FullIcon.gameObject.SetActive(true);
+            canTouch = true;
         }
         float pct = Energy / Max_Energy;
         //Debug.Log(Energy + " " + pct);

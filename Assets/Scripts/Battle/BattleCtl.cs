@@ -8,14 +8,14 @@ public class BattleCtl : MonoBehaviour
     public string currentScene;
     public string nextScene;
     // Start is called before the first frame update
-    void Start()
+    
+    public void RestartScene()
     {
-        
+        SceneTransition.Instance.StartFadeIn(currentScene);
     }
 
-    // Update is called once per frame
-    void Update()
+    public void NextScene()
     {
-        
+        SceneTransition.Instance.StartFadeIn(nextScene);
     }
 }
