@@ -1,6 +1,5 @@
 using DG.Tweening;
 using Unity.Mathematics;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -59,8 +58,6 @@ public class PlyaerCtl : MonoBehaviour
 
     private void Update()
     {
-
-
         // Touch
         if (Input.GetKeyDown(KeyCode.J) || (Input.GetKeyDown(KeyCode.Space)))
         {

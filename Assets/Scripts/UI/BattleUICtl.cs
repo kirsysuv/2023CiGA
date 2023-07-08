@@ -16,7 +16,7 @@ public class BattleUICtl : MonoBehaviour
     public Image FullText;
     public Image low;
     public SpriteRenderer Touch;
-    public bool canTouch = false;
+    public bool canTouch;
 
     public float ColdDownTime = 2.5f;
 
@@ -34,7 +34,7 @@ public class BattleUICtl : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.J))
         {
-            if (Energy < Max_Energy )
+            if (Energy < Max_Energy)
             {
                 return;
             }
@@ -76,7 +76,7 @@ public class BattleUICtl : MonoBehaviour
             FullText.gameObject.SetActive(false);
             FullIcon.gameObject.SetActive(false);
             canTouch = false;
-            //Debug.Log("没满");
+            Debug.Log("没满");
         }
         if (Energy == Max_Energy)
         {
@@ -84,7 +84,7 @@ public class BattleUICtl : MonoBehaviour
             FullText.gameObject.SetActive(true);
             FullIcon.gameObject.SetActive(true);
             canTouch = true;
-            //Debug.Log("满了");
+            Debug.Log("满了");
         }
         float pct = Energy / Max_Energy;
         //Debug.Log(Energy + " " + pct);
