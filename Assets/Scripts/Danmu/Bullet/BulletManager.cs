@@ -12,54 +12,56 @@ public class BulletManager : MonoBehaviour
         Instance = this;
     }
 
-    void Start()
-    {
-       // Function();
-    }
-
-
-
     public void ShootConfig(BulletData bulletData, BaseGameObjectPool pool)
     {
-        int num = bulletData.Count / 2; 
+        //这个Num是用来控制角度的
+        int num = bulletData.Count / 2;
         for (int i = 0; i < bulletData.Count; i++)
         {
             GameObject go = pool.Get(bulletData.Position, bulletData.LifeTime); //从对象池中获取
             Bullet bullet = go.GetComponent<Bullet>();
-            var render = go.GetComponent<Renderer>();
-            if (render!=null)
+
+            SpriteRenderer sr = go.GetComponent<SpriteRenderer>();
+
+            if (sr != null)
             {
-                go.GetComponent<Renderer>().material?.SetColor("_EmissionColor", bulletData.color);
+                sr.color = bulletData.color;
             }
             bullet.BulletSpeed = bulletData.Speed;
             bullet.DelayTime = bulletData.DelayTime;
 
             if (bulletData.Count % 2 == 1)
             {
-                go.transform.rotation = bulletData.direction * Quaternion.Euler(0, bulletData.Angle * num, 0);
-                go.transform.position = go.transform.position + go.transform.right * num * bulletData.Distance;
-                num--;
+                if (bulletData.isParallel == false)
+                {
+                    go.transform.rotation = bulletData.direction * Quaternion.Euler(0, 0, bulletData.Angle * num);
+                    go.transform.position = go.transform.position + go.transform.right * num * bulletData.Distance;
+                }
+                else
+                {
+                    go.transform.rotation = bulletData.direction;
+                    go.transform.position = go.transform.position + go.transform.right * num * bulletData.parallelDistance;
+                }
+
+
             }
             else
             {
-                go.transform.rotation = bulletData.direction * Quaternion.Euler(0, bulletData.Angle / 2 + bulletData.Angle * (num - 1), 0);
-                go.transform.position = go.transform.position + go.transform.right * ((num - 1) * bulletData.Distance + bulletData.Distance / 2);
-                num--;
+                if (bulletData.isParallel == false)
+                {
+                    go.transform.rotation = bulletData.direction * Quaternion.Euler(0, 0, bulletData.Angle / 2 + bulletData.Angle * (num - 1));
+                    go.transform.position = go.transform.position + go.transform.right * ((num - 1) * bulletData.Distance + bulletData.Distance / 2);
+                }
+                else
+                {
+                    go.transform.rotation = bulletData.direction;
+                    go.transform.position = go.transform.position + go.transform.right * ((num - 1) * bulletData.parallelDistance + bulletData.parallelDistance / 2);
+                }
             }
-            go.transform.position = go.transform.position + go.transform.forward * bulletData.CenterDis;
-            //go.transform.rotation = Quaternion.Euler(Vector3.zero);
+
+            num--;
+            go.transform.position = go.transform.position + go.transform.up * bulletData.CenterDis;
+
         }
     }
-
-    //public float[] y;
-    //void Function()
-    //{
-    //    y = new float[62];
-    //    for (int i = 0; i < y.Length; i++)
-    //    {
-    //        float t = (float)i / 10;
-    //        y[i] = Mathf.Cos(t);
-    //    }
-    //}
-
 }

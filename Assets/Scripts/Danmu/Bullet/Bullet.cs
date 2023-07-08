@@ -15,7 +15,7 @@ public class Bullet : MonoBehaviour
         {
             Shooting();
         }
-        else if(DelayI > DelayTime * 50)
+        else if (DelayI > DelayTime * 50)
         {
             Shoot = true;
         }
@@ -28,7 +28,7 @@ public class Bullet : MonoBehaviour
     public void Shooting()
     {
         Vector3 p = transform.position;
-        transform.position = transform.position + transform.forward * BulletSpeed * Time.fixedDeltaTime;
+        transform.position = transform.position + transform.up * BulletSpeed * Time.fixedDeltaTime;
     }
 
     private void OnEnable()
@@ -36,9 +36,4 @@ public class Bullet : MonoBehaviour
         DelayI = 0;
         Shoot = false;
     }
-
-
-
-
-
 }

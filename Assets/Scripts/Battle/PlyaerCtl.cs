@@ -126,14 +126,13 @@ public class PlyaerCtl : MonoBehaviour
         }
 
         // 获取输入
-        float moveHorizontal = Input.GetAxis("Horizontal");
-        float moveVertical = Input.GetAxis("Vertical");
+        float moveHorizontal = Input.GetAxisRaw("Horizontal");
+        float moveVertical = Input.GetAxisRaw("Vertical");
 
         // 计算移动方向和速度
-        Vector2 movement = new Vector2(moveHorizontal, moveVertical).normalized * moveSpeed;
+        Vector2 movement = new Vector2(moveHorizontal, moveVertical).normalized * moveSpeed*Time.deltaTime;
 
-        // 应用移动
-        rb.velocity = movement;
+
 
         // 更新朝向
         //if (movement != Vector2.zero)
@@ -144,7 +143,7 @@ public class PlyaerCtl : MonoBehaviour
         // Tween 移动
         if (movement.magnitude > 0)
         {
-            transform.DOMove((Vector2)transform.position + movement, tweenDuration);
+            transform.position += new Vector3(movement.x, movement.y, 0);
         }
 
 
