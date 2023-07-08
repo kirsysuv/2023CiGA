@@ -13,7 +13,7 @@ public class SceneTransition : SingletonMonoBehaviour<SceneTransition>
     AsyncOperation operation;
     private CanvasGroup canvasGroup;
 
-    private void Start()
+    private void Awake()
     {
         DontDestroyOnLoad(gameObject);
         // 获取 CanvasGroup 组件

@@ -50,6 +50,9 @@ public class PlyaerCtl : MonoBehaviour
 
                 }
             }
+
+            // 
+            GameObject.Find("BattleUI").GetComponent<BattleUICtl>().GainEnergy(10);
         }
 
         // 获取输入
@@ -63,10 +66,10 @@ public class PlyaerCtl : MonoBehaviour
         rb.velocity = movement;
 
         // 更新朝向
-        if (movement != Vector2.zero)
-        {
-            transform.up = movement;
-        }
+        //if (movement != Vector2.zero)
+        //{
+        //    transform.up = movement;
+        //}
 
         // Tween 移动
         if (movement.magnitude > 0)
