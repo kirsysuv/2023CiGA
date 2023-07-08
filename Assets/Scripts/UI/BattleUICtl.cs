@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using Unity.Mathematics;
 using UnityEngine;
 using UnityEngine.UI;
@@ -14,32 +12,67 @@ public class BattleUICtl : MonoBehaviour
     public Image ProgressR;
     public Image LineL;
     public Image LineR;
+    public Image FullIcon;
+    public Image FullText;
+    public Image low;
 
+    public float ColdDownTime = 2.5f;
 
     // Start is called before the first frame update
     void Start()
     {
+        low.gameObject.SetActive(false);
+        FullIcon.gameObject.SetActive(false);
+        FullText.gameObject.SetActive(false);
 
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.J))
+        {
+            OnTouchDown();
+        }
+    }
+    private void FixedUpdate()
+    {
+        float u = Max_Energy * Time.fixedDeltaTime / ColdDownTime;
+        ColdDown(u);
+    }
+
+    public void ColdDown(float deltime)
+    {
+        Debug.Log("获得能量:" + deltime);
+        Energy = math.min(Energy + deltime, Max_Energy);
+        UpdateView();
 
     }
 
-    public void GainEnergy(float energy)
+    public void OnTouchDown()
     {
-        Debug.Log("获得能量:" + energy);
-        Energy = math.min(Energy + energy, Max_Energy);
+        Energy = 0;
+        UpdateView();
+    }
 
+    private void UpdateView()
+    {
         // update view
+        if (Energy < Max_Energy)
+        {
+            low.gameObject.SetActive(true);
+        }
+        if (Energy == Max_Energy)
+        {
+            low.gameObject.SetActive(false);
+            FullText.gameObject.SetActive(true);
+            FullIcon.gameObject.SetActive(true);
+        }
         float pct = Energy / Max_Energy;
         Debug.Log(Energy + " " + pct);
         ProgressL.fillAmount = pct;
         ProgressR.fillAmount = pct;
         LineL.fillAmount = pct;
         LineR.fillAmount = pct;
-
     }
 }

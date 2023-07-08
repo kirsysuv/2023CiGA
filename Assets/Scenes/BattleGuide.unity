@@ -244,6 +244,9 @@ MonoBehaviour:
   ProgressR: {fileID: 1267113853}
   LineL: {fileID: 919093608}
   LineR: {fileID: 1529178395}
+  FullIcon: {fileID: 1321948711}
+  FullText: {fileID: 414582445}
+  low: {fileID: 833486922}
 --- !u!1 &272761735
 GameObject:
   m_ObjectHideFlags: 3

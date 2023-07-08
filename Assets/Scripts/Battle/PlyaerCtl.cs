@@ -50,9 +50,6 @@ public class PlyaerCtl : MonoBehaviour
 
                 }
             }
-
-            // 
-            GameObject.Find("BattleUI").GetComponent<BattleUICtl>().GainEnergy(10);
         }
 
         // ªÒ»° ‰»Î
