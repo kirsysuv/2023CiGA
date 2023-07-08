@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlyaerCtl : MonoBehaviour
 {
 
-    public float moveSpeed = 5f;
+    public float moveSpeed = 1f;
     public float tweenDuration = 0.3f;
     public bool a;
 
@@ -21,6 +21,8 @@ public class PlyaerCtl : MonoBehaviour
 
     private void Update()
     {
+
+  
 
         // Touch
         if (Input.GetKeyDown(KeyCode.J) || (Input.GetKeyDown(KeyCode.Space)))

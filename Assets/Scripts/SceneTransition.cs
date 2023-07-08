@@ -35,6 +35,7 @@ public class SceneTransition : SingletonMonoBehaviour<SceneTransition>
 
     public void StartFadeIn(string name)
     {
+        Debug.Log("开始Fade");
         // 初始化透明度为 0
         canvasGroup.alpha = 0;
 
@@ -49,6 +50,7 @@ public class SceneTransition : SingletonMonoBehaviour<SceneTransition>
 
     private void LoadTargetScene(string name)
     {
+        Debug.Log("开始加载" + name);
         // 使用 SceneManager 加载目标场景
         operation = SceneManager.LoadSceneAsync(name);
     }
