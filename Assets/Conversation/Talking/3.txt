@@ -1,0 +1,26 @@
+:: StoryTitle
+Test3
+
+:: StoryData
+{
+ "ifid": "3AB2C13C-887E-4DAB-A580-B8D5F8A5E330",
+ "format": "Entweedle",
+ "format-version": "1.1.1",
+ "startnode": "1",
+ "zoom": "1",
+ "start": "未命名片段"
+}
+
+:: UserScript [script]
+
+
+:: UserStylesheet [stylesheet]
+
+
+:: 未命名片段 [:Player START] {"position":"860,398.5","size":"100,100"}
+（忐忑）【内心】她还会记得我吗?
+
+[[Ha]]
+
+:: Ha [:Player END] {"position":"860,548.5","size":"100,100"}
+Ha
