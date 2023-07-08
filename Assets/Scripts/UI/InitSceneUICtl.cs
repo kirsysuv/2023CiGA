@@ -18,7 +18,7 @@ public class InitSceneUICtl : MonoBehaviour
 
     private void EndGame()
     {
-        throw new NotImplementedException();
+        Application.Quit();
     }
 
     private void StartGame()
