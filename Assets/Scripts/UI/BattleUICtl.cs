@@ -76,6 +76,7 @@ public class BattleUICtl : MonoBehaviour
             FullText.gameObject.SetActive(false);
             FullIcon.gameObject.SetActive(false);
             canTouch = false;
+            //Debug.Log("Ã»Âú");
         }
         if (Energy == Max_Energy)
         {
@@ -83,6 +84,7 @@ public class BattleUICtl : MonoBehaviour
             FullText.gameObject.SetActive(true);
             FullIcon.gameObject.SetActive(true);
             canTouch = true;
+            //Debug.Log("ÂúÁË");
         }
         float pct = Energy / Max_Energy;
         //Debug.Log(Energy + " " + pct);

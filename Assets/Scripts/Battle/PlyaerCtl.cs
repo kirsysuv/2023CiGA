@@ -36,7 +36,7 @@ public class PlyaerCtl : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         spriteRenderer = GetComponent<SpriteRenderer>();
         blinkSequence = DOTween.Sequence();
-
+        Energy = 0;
 
         // 设置起始透明度为 0
         spriteRenderer.color = new Color(spriteRenderer.color.r, spriteRenderer.color.g, spriteRenderer.color.b, 1f);
