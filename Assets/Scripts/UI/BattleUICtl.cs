@@ -15,6 +15,7 @@ public class BattleUICtl : MonoBehaviour
     public Image FullIcon;
     public Image FullText;
     public Image low;
+    public SpriteRenderer Touch;
 
     public float ColdDownTime = 2.5f;
 
@@ -24,7 +25,7 @@ public class BattleUICtl : MonoBehaviour
         low.gameObject.SetActive(false);
         FullIcon.gameObject.SetActive(false);
         FullText.gameObject.SetActive(false);
-
+        Touch = GameObject.Find("Touch").GetComponent<SpriteRenderer>();
     }
 
     // Update is called once per frame

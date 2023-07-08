@@ -247,6 +247,8 @@ MonoBehaviour:
   FullIcon: {fileID: 1321948711}
   FullText: {fileID: 414582445}
   low: {fileID: 833486922}
+  Touch: {fileID: 0}
+  ColdDownTime: 2.5
 --- !u!1 &272761735
 GameObject:
   m_ObjectHideFlags: 3
@@ -1845,6 +1847,7 @@ MonoBehaviour:
   moveSpeed: 0.2
   tweenDuration: 0.3
   a: 0
+  Touch: {fileID: 706430972}
 --- !u!1001 &1411487628079855018
 PrefabInstance:
   m_ObjectHideFlags: 0

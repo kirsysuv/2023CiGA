@@ -1,6 +1,7 @@
 using DG.Tweening;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlyaerCtl : MonoBehaviour
 {
@@ -8,6 +9,8 @@ public class PlyaerCtl : MonoBehaviour
     public float moveSpeed = 1f;
     public float tweenDuration = 0.3f;
     public bool a;
+    public GameObject Touch;
+
 
     private Rigidbody2D rb;
     private Collider2D touchCol;
@@ -16,6 +19,11 @@ public class PlyaerCtl : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         touchCol = GameObject.Find("Touch").GetComponent<Collider2D>();
+
+    }
+
+    private void DisableTouch()
+    {
 
     }
 
@@ -28,6 +36,16 @@ public class PlyaerCtl : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.J) || (Input.GetKeyDown(KeyCode.Space)))
         {
             Debug.Log("按下Touch");
+            //View
+            Touch.SetActive(true);
+            Color color = Touch.GetComponent<SpriteRenderer>().color;
+            color.a = 1f;
+            Touch.GetComponent<SpriteRenderer>().color = color;
+            Touch.GetComponent<SpriteRenderer>()
+                .DOFade(0F, 0.5F)
+                .OnComplete(() => { Touch.SetActive(false);});
+            
+            
             Bounds bounds = touchCol.bounds;
 
             // 在碰撞体内创建一个盒状区域
