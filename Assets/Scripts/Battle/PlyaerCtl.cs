@@ -113,9 +113,11 @@ public class PlyaerCtl : MonoBehaviour
 
     private void Update()
     {
+        
 
         if (Input.GetKeyDown(KeyCode.J) || (Input.GetKeyDown(KeyCode.Space)))
         {
+            Win();
             //Debug.Log("°´ÏÂTouch" + GameObject.Find("BattleUI").GetComponent<BattleUICtl>().Energy);
 
             if (unDamagable && canTouch())
