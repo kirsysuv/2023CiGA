@@ -18,6 +18,8 @@ public class PlyaerCtl : MonoBehaviour
     private Rigidbody2D rb;
     private Collider2D touchCol;
 
+    public GameObject slash;
+
     //无敌闪烁
     private SpriteRenderer spriteRenderer;
     private DG.Tweening.Sequence blinkSequence;
@@ -105,6 +107,21 @@ public class PlyaerCtl : MonoBehaviour
             {
                 //无敌状态下按下，可以进行特殊攻击
                 Debug.Log("播放攻击Boss动画");
+
+                Bounds bounds1 = touchCol.bounds;
+                // 在碰撞体内创建一个盒状区域
+                Collider2D[] colliders1 = Physics2D.OverlapBoxAll(bounds1.center, bounds1.size, 0f);
+
+                // 遍历检测到的碰撞体
+                foreach (Collider2D collider in colliders1)
+                {
+                    if (collider.gameObject.tag == "Boss")
+                    {
+
+                    }
+                }
+                GameObject slash = Instantiate(this.slash);
+                slash.transform.parent = transform;
 
                 //TODO 特殊攻击
                 GameObject.Find("BattleCtl").GetComponent<BattleCtl>().NextScene();
