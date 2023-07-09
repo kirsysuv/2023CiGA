@@ -98,7 +98,7 @@ public class PlyaerCtl : MonoBehaviour
 
             if (unDamagable)
             {
-                //无敌状态下按下
+                //无敌状态下按下，可以进行特殊攻击
                 Debug.Log("播放攻击Boss动画");
 
                 //TODO 特殊攻击
