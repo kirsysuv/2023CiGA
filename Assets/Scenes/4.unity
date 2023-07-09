@@ -623,7 +623,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1fc38d7af38d09c40abc22c2cfa07538, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Dialog: {fileID: 4900000, guid: 7146f290614b1a0478ba1b3851927923, type: 3}
+  Dialog: {fileID: 4900000, guid: 7b1049f7b27377b4eaefe3d90fa3fc19, type: 3}
 --- !u!114 &1392352167
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -636,7 +636,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4f7e0bf3a4031f47aac788ac6adfdee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SceneName: BattleGuide 2
+  SceneName: BattleGuide 4
 --- !u!225 &1392352169
 CanvasGroup:
   m_ObjectHideFlags: 0

@@ -1537,7 +1537,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76d5794c21a222649a68ae36492eec11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentScene: BattleGuide
+  currentScene: BattleGuide 1
   nextScene: 2
 --- !u!4 &1322605527
 Transform:

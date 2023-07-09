@@ -643,6 +643,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d2e252dd541a5d4fa129f091ec5ac1f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SpecialBulletColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!4 &421632579
 Transform:
   m_ObjectHideFlags: 0
@@ -901,6 +902,7 @@ MonoBehaviour:
   SelfRotation: 30
   AddRotation: 0
   CenterDis: 0
+  specialBulletChance: 1
   BulletColor: {r: 1, g: 0, b: 0, a: 1}
   R_Offset: {x: 0, y: 0, z: 0}
   P_Offset: {x: 0, y: 0, z: 0}
@@ -1443,8 +1445,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76d5794c21a222649a68ae36492eec11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentScene: BattleGuide
-  nextScene: _2
+  currentScene: BattleGuide 2
+  nextScene: 3
 --- !u!4 &1322605527
 Transform:
   m_ObjectHideFlags: 0
@@ -1513,6 +1515,7 @@ MonoBehaviour:
   SelfRotation: 30
   AddRotation: 0
   CenterDis: 0
+  specialBulletChance: 1
   BulletColor: {r: 1, g: 0, b: 0, a: 1}
   R_Offset: {x: 0, y: 0, z: 0}
   P_Offset: {x: 0, y: 0, z: 0}
