@@ -205,12 +205,8 @@ public class DialogueViewer : MonoBehaviour
         {
             if (!IsFinalParagraghReached())
             {
-                if ((paragraghIndex == 0 || Input.GetKeyDown(KeyCode.Space)))
+                if ((paragraghIndex == 0 || (Input.GetMouseButtonDown(0) || Input.GetKeyDown(KeyCode.Space))))
                 {
-
-                    AudioManager.PlayEffect(AudioManager.Effect_NovelClick);
-
-
                     messageArea.GetComponent<TextMeshProUGUI>().text = currentNode.paragraphs[paragraghIndex++];
                     speaker.GetComponent<TextMeshProUGUI>().text = currentNode.RoleName;
                 }
@@ -221,12 +217,8 @@ public class DialogueViewer : MonoBehaviour
             }
             else
             {
-                if (currentNode.IsEndNode() && Input.GetKeyDown(KeyCode.Space))
+                if (currentNode.IsEndNode() && (Input.GetMouseButtonDown(0) || Input.GetKeyDown(KeyCode.Space)))
                 {
-
-                    AudioManager.PlayEffect(AudioManager.Effect_NovelClick);
-
-
                     canvasGroup.alpha = 0;
                     SwitchOptionVisible(false);
 

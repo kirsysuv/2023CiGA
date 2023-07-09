@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Danmu
   - Pause
+  - Boss
   layers:
   - Default
   - TransparentFX
