@@ -14,6 +14,8 @@ public class OneGoDialogTrigger : BaseDialogTrigger
     {
         DialogEvent = this.GetComponent<IDialogEvent>();
         TriggerDialog(Dialog);
+
+        AudioManager.PlayBgm(AudioManager.BGM_Novel);
     }
 
     public virtual void TriggerDialog(TextAsset dialog)
@@ -30,12 +32,12 @@ public class OneGoDialogTrigger : BaseDialogTrigger
 
     protected void StartTalk(TextAsset dialog)
     {
-            var dialogEngine = GameObject.Find("DialogCanvasEngine");
-            var dialogueViewer = dialogEngine.GetComponent<DialogueViewer>();
+        var dialogEngine = GameObject.Find("DialogCanvasEngine");
+        var dialogueViewer = dialogEngine.GetComponent<DialogueViewer>();
 
-            if (dialogueViewer != null)
-            {
-                StartTalk(dialogueViewer, dialog);
-            }
+        if (dialogueViewer != null)
+        {
+            StartTalk(dialogueViewer, dialog);
+        }
     }
 }

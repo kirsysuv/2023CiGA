@@ -77,7 +77,7 @@ public class AudioManager : SingletonMonoBehaviour<AudioManager>
 
     public static void PlayEffect(string name)
     {
-        PlayAudio(name, false, false);
+        PlayAudio(name, false, false, true);
     }
 
     /// <summary>
@@ -86,7 +86,7 @@ public class AudioManager : SingletonMonoBehaviour<AudioManager>
     /// <param name="name"></param>
     /// <param name="isLoop"></param>
     /// <param name="isStopCurrent"></param>
-    public static void PlayAudio(string name, bool isLoop = false, bool isStopCurrent = false)
+    public static void PlayAudio(string name, bool isLoop = false, bool isStopCurrent = false, bool isEffect = false)
     {
         Debug.Log(name);
         if (!Instance.audioDic.ContainsKey(name))
@@ -103,6 +103,11 @@ public class AudioManager : SingletonMonoBehaviour<AudioManager>
         if (isStopCurrent)
         {
             StopCurrent();
+        }
+        if (isEffect)
+        {
+            Debug.Log("Effect");
+            Instance.audioDic[name].Stop();
         }
         Instance.audioDic[name].loop = isLoop;
         Instance.audioDic[name].Play();

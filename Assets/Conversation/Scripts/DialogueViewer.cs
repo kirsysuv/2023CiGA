@@ -207,6 +207,10 @@ public class DialogueViewer : MonoBehaviour
             {
                 if ((paragraghIndex == 0 || Input.GetKeyDown(KeyCode.Space)))
                 {
+
+                    AudioManager.PlayEffect(AudioManager.Effect_NovelClick);
+
+
                     messageArea.GetComponent<TextMeshProUGUI>().text = currentNode.paragraphs[paragraghIndex++];
                     speaker.GetComponent<TextMeshProUGUI>().text = currentNode.RoleName;
                 }
@@ -219,6 +223,10 @@ public class DialogueViewer : MonoBehaviour
             {
                 if (currentNode.IsEndNode() && Input.GetKeyDown(KeyCode.Space))
                 {
+
+                    AudioManager.PlayEffect(AudioManager.Effect_NovelClick);
+
+
                     canvasGroup.alpha = 0;
                     SwitchOptionVisible(false);
 
