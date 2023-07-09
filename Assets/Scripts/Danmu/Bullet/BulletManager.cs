@@ -12,7 +12,7 @@ public class BulletManager : MonoBehaviour
         Instance = this;
     }
 
-    public Color SpecialBulletColor;
+    public Sprite[] SpriteType;
 
     public void ShootConfig(BulletData bulletData, BaseGameObjectPool pool)
     {
@@ -25,10 +25,19 @@ public class BulletManager : MonoBehaviour
 
             SpriteRenderer sr = go.GetComponent<SpriteRenderer>();
 
-            if (sr != null)
+            if (Random.Range(0, 100) <= bulletData.SpecialChance)
             {
-                sr.color = bulletData.color;
+                go.GetComponent<Danmu>().gainEnergy = true;
+                sr.sprite = SpriteType[(int)bulletData.bType+2];
+
             }
+            else
+            {
+                go.GetComponent<Danmu>().gainEnergy = false;
+                sr.sprite = SpriteType[(int)bulletData.bType];
+            }
+
+
             bullet.BulletSpeed = bulletData.Speed;
             bullet.DelayTime = bulletData.DelayTime;
 
@@ -37,7 +46,7 @@ public class BulletManager : MonoBehaviour
                 if (bulletData.isParallel == false)
                 {
                     go.transform.rotation = bulletData.direction * Quaternion.Euler(0, 0, bulletData.Angle * num);
-                    go.transform.position = go.transform.position + go.transform.right * num * bulletData.Distance;
+                    go.transform.position = go.transform.position;
                 }
                 else
                 {
@@ -52,7 +61,7 @@ public class BulletManager : MonoBehaviour
                 if (bulletData.isParallel == false)
                 {
                     go.transform.rotation = bulletData.direction * Quaternion.Euler(0, 0, bulletData.Angle / 2 + bulletData.Angle * (num - 1));
-                    go.transform.position = go.transform.position + go.transform.right * ((num - 1) * bulletData.Distance + bulletData.Distance / 2);
+                    go.transform.position = go.transform.position;
                 }
                 else
                 {
@@ -64,11 +73,7 @@ public class BulletManager : MonoBehaviour
             num--;
             go.transform.position = go.transform.position + go.transform.up * bulletData.CenterDis;
 
-            if(Random.Range(0, 100) <= bulletData.SpecialChance)
-            {
-                go.GetComponent<Danmu>().gainEnergy = true;
-                go.GetComponent<SpriteRenderer>().color = SpecialBulletColor;
-            }
+            
 
         }
     }

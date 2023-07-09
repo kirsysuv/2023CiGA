@@ -11,16 +11,15 @@ public class BulletControl : MonoBehaviour
     public float CdTime = 0.1f; //子弹间隔时间 =0时只触发一次
     public float Speed = 10; //子弹移动速度
     public float Angle = 0; //旋转角度
-    public float Distance = 0; // 子弹间的间隔
     public float SelfRotation = 0; // 每帧自转角度
     public float AddRotation = 0; // 每帧自转角度增量
     public float CenterDis = 0; // 与发射点的距离
 
     public float specialBulletChance = 1f;//特殊子弹概率
 
-    public Color BulletColor = Color.white; //子弹的颜色
     public Vector3 R_Offset = Vector3.zero; //初始旋转的偏移量
     public Vector3 P_Offset = Vector3.zero;  //位置的偏移量
+
 
     public Vector3 RChange
     {
@@ -39,6 +38,9 @@ public class BulletControl : MonoBehaviour
     public float DelayTime = 0;
     Quaternion selfRotation;
     int LimitI = 0;
+
+    [Header("子弹样式")]
+    public BulletType zidanType;
 
     //自机狙
     [Header("自机狙的话请勾选")]
@@ -137,7 +139,7 @@ public class BulletControl : MonoBehaviour
             selfRotation *= q;
             BulletData bulletData = new BulletData();
 
-            bulletData.SetValue(transform.position + P_Offset, selfRotation, Count, LifeTime, Speed, Angle, Distance, BulletColor, DelayTime, CenterDis, isParallel, parallelDistance, specialBulletChance);
+            bulletData.SetValue(transform.position + P_Offset, selfRotation, Count, LifeTime, Speed, Angle, DelayTime, CenterDis, isParallel, parallelDistance, specialBulletChance, zidanType);
             if (LimitI > CdTime * 50 || CdTime == 0)
             {
                 BulletManager.Instance.ShootConfig(bulletData, m_bullet1_pool);
@@ -153,7 +155,7 @@ public class BulletControl : MonoBehaviour
 
             BulletData bulletData = new BulletData();
 
-            bulletData.SetValue(transform.position + P_Offset, tempQuaternion, Count, LifeTime, Speed, Angle, Distance, BulletColor, DelayTime, CenterDis, isParallel, parallelDistance, specialBulletChance);
+            bulletData.SetValue(transform.position + P_Offset, tempQuaternion, Count, LifeTime, Speed, Angle, DelayTime, CenterDis, isParallel, parallelDistance, specialBulletChance,zidanType);
             if (LimitI > CdTime * 50 || CdTime == 0)
             {
                 BulletManager.Instance.ShootConfig(bulletData, m_bullet1_pool);
@@ -164,4 +166,11 @@ public class BulletControl : MonoBehaviour
 
     }
 
+}
+
+
+public enum BulletType
+{
+    Circle,
+    Jian
 }
