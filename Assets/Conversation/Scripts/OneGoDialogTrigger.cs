@@ -38,4 +38,12 @@ public class OneGoDialogTrigger : BaseDialogTrigger
                 StartTalk(dialogueViewer, dialog);
             }
     }
+
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.P))
+        {
+            this.GetComponent<SceneLoadDialogEvent>().End();
+        }
+    }
 }
