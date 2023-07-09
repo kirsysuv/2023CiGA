@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using DG.Tweening;
 using System;
+using UnityEngine.UI;
 
 public class SceneTransition : SingletonMonoBehaviour<SceneTransition>
 {
@@ -22,6 +23,7 @@ public class SceneTransition : SingletonMonoBehaviour<SceneTransition>
         // 获取 CanvasGroup 组件
         canvasGroup = GetComponent<CanvasGroup>();
         //StartFadeIn(Const.BattleGuideScene);
+        canvasGroup.alpha = 1;
     }
 
     private void Update()
@@ -30,11 +32,13 @@ public class SceneTransition : SingletonMonoBehaviour<SceneTransition>
         {
             if (operation.isDone)
             {
-                canvasGroup.DOFade(0, fadeDuration).OnComplete(() =>
-                {
-                    canvasGroup.alpha = 1;
-                });
-                fadeMask.SetActive(false);
+                //canvasGroup.DOFade(0, fadeDuration).OnComplete(() =>
+                //{
+                //    canvasGroup.alpha = 1;
+                //});
+                //fadeMask.SetActive(false);
+
+                fadeMask.GetComponent<Image>().DOFade(0, fadeDuration);
                 operation = null;
             }
         }
@@ -46,11 +50,14 @@ public class SceneTransition : SingletonMonoBehaviour<SceneTransition>
         fadeMask.SetActive(true);
         //noise.SetActive(false);
 
+
+        fadeMask.GetComponent<Image>().DOFade(1, fadeDuration).OnComplete(delegate { LoadTargetScene(name); });
+
         // 初始化透明度为 0
-        canvasGroup.alpha = 0;
+        //  canvasGroup.alpha = 0;
 
         // 执行渐入效果
-        canvasGroup.DOFade(1, fadeDuration).OnComplete(delegate { LoadTargetScene(name); });
+        //  canvasGroup.DOFade(1, fadeDuration).OnComplete(delegate { LoadTargetScene(name); });
     }
 
     private void LoadTargetScene()
