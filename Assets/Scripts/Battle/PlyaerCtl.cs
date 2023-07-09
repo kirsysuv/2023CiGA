@@ -132,6 +132,8 @@ public class PlyaerCtl : MonoBehaviour
                 {
                     if (collider.gameObject.tag == "Boss")
                     {
+                        AudioManager.PlayEffect(AudioManager.Effect_BossHited);
+
                         collider.transform.parent.GetComponent<BOSSScript>().DecreasedBossHealth();
                         AttackComplete();
                         GameObject.Find("Energy").GetComponent<Image>().DOFade(0, 0.1f);
