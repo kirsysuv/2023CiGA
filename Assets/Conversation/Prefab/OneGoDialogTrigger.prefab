@@ -10,11 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 7137453424917389697}
   - component: {fileID: 7137453424917389698}
-  - component: {fileID: -5575308320883810060}
-  - component: {fileID: 1508184868}
-  - component: {fileID: 1508184865}
-  - component: {fileID: 1508184866}
-  - component: {fileID: 1508184869}
+  - component: {fileID: 500547352297540235}
+  - component: {fileID: 6454310198312243207}
+  - component: {fileID: 4943417622317594472}
   m_Layer: 0
   m_Name: OneGoDialogTrigger
   m_TagString: Untagged
@@ -32,9 +30,10 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -102, y: 76, z: 0}
   m_LocalScale: {x: 51.84436, y: 51.84436, z: 51.84436}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &7137453424917389698
 BoxCollider2D:
@@ -46,6 +45,25 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -62,7 +80,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 3.866322, y: 4.533245}
   m_EdgeRadius: 0
---- !u!114 &-5575308320883810060
+--- !u!114 &500547352297540235
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -71,70 +89,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 7137453424917389696}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3f828a60681998148b6060a498a0a807, type: 3}
+  m_Script: {fileID: 11500000, guid: 1fc38d7af38d09c40abc22c2cfa07538, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Dialog: {fileID: 4900000, guid: 0909955c4ed1c6a418ed99ea2eb88418, type: 3}
-  nextTrigger: {fileID: 1508184869}
-  isCardAvailable: 1
-  isTriggerDistanceAnimation: 1
-  onGoing: 0
-  CanUseCard: 0
-  ManualTrigger: 1
-  isEnterred: 0
-  waitForAnimationPlay: 0
---- !u!212 &1508184868
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7137453424917389696}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 2037598079
-  m_SortingLayer: 4
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 383c23b8b6c29fb46a3b34db89ef1c28, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 1
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 3.95, y: 4.42}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
---- !u!114 &1508184865
+  Dialog: {fileID: 4900000, guid: 7146f290614b1a0478ba1b3851927923, type: 3}
+--- !u!114 &6454310198312243207
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -143,45 +102,19 @@ MonoBehaviour:
   m_GameObject: {fileID: 7137453424917389696}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fc652bc4e545b4642a0b78d2823c3875, type: 3}
+  m_Script: {fileID: 11500000, guid: d4f7e0bf3a4031f47aac788ac6adfdee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1508184866
-MonoBehaviour:
+  SceneName: InitScene
+--- !u!225 &4943417622317594472
+CanvasGroup:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7137453424917389696}
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e283b70c1839da24287a125913cf94bf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  InventoryName: "\u82CF\u6587\u6C0F"
-  IsDisplay: 0
-  isInvestigated: 0
-  isDisplayOnWalkingRight: 1
-  isDisplayOnWalkingLeft: 1
-  isCardAvailable: 0
-  CanUseCard: 0
---- !u!114 &1508184869
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7137453424917389696}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7b340fcd394b3964abfea081aa778ff0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Dialog: {fileID: 4900000, guid: f8865456337ec1548b6c509fb39b9a6f, type: 3}
-  nextTrigger: {fileID: 1508184869}
-  isCardAvailable: 0
-  isTriggerDistanceAnimation: 1
-  onGoing: 0
-  CanUseCard: 1
-  ManualTrigger: 1
-  isEnterred: 0
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0

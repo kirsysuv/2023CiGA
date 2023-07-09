@@ -54,11 +54,23 @@ public class PlyaerCtl : MonoBehaviour
     /// </summary>
     public void Hurted()
     {
+        if (unDamagable)
+        {
+            return;
+        }
+
+        AudioManager.PlayEffect(AudioManager.Effect_PlayerHited);
+
         blood.BloodHurted();
         unDamagable = true;
         blinkSequence.Play();
         DOTween.Sequence().AppendInterval(2f).OnComplete(endUndamagable).Play();
 
+    }
+
+    public void Dead()
+    {
+        GameObject.Find("BattleCtl").GetComponent<BattleCtl>().NextScene();
     }
 
     private void endUndamagable()

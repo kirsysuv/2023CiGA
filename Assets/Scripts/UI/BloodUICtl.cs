@@ -9,17 +9,18 @@ public class BloodUICtl : MonoBehaviour
     public GameObject blood1;
     public GameObject blood2;
     public GameObject blood3;
+    public PlyaerCtl plyaer;
     public int lifeCount;
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     /// <summary>
@@ -33,7 +34,7 @@ public class BloodUICtl : MonoBehaviour
     public void BloodHurted()
     {
         Debug.Log("Hurted");
-       if(lifeCount > 0)
+        if (lifeCount > 0)
         {
             lifeCount--;
             UpdateState();
@@ -49,6 +50,7 @@ public class BloodUICtl : MonoBehaviour
                 blood1.SetActive(false);
                 blood2.SetActive(false);
                 blood3.SetActive(false);
+                plyaer.Dead();
                 break;
             case 1:
                 blood1.SetActive(true);
@@ -67,5 +69,5 @@ public class BloodUICtl : MonoBehaviour
                 break;
         }
     }
-    
+
 }

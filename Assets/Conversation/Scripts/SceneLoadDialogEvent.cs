@@ -14,6 +14,6 @@ public class SceneLoadDialogEvent : MonoBehaviour, IDialogEvent
 
     public void End()
     {
-        GetComponent<SceneTransitionV2>().StartFadeIn(SceneName);
+        SceneTransition.Instance.StartFadeIn(SceneName);
     }
 }
