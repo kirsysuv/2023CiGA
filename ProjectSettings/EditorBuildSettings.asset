@@ -12,15 +12,6 @@ EditorBuildSettings:
     path: Assets/Scenes/BattleGuide.unity
     guid: d8a804312d81eb94cadd89dc4ff45522
   - enabled: 1
-    path: Assets/Scenes/_1.unity
-    guid: 1741eea33728a9947ad3a678855d6cb1
-  - enabled: 1
-    path: Assets/Scenes/_2.unity
-    guid: b1c66580951398e479e8d720ee371f37
-  - enabled: 1
-    path: Assets/Scenes/Battle2.unity
-    guid: bd1219370a47480449e36082b392abc1
-  - enabled: 1
     path: Assets/Scenes/1.unity
     guid: 4c82f48965ad7324fa95ba8a99444b75
   - enabled: 1
@@ -35,4 +26,19 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/BattleGuide 2.unity
     guid: 18d01b7bc24dcd046a5f8b2c1dab5e80
+  - enabled: 1
+    path: Assets/Scenes/3.unity
+    guid: 842e39a2bdaf53f4cbe3dccd20588f3b
+  - enabled: 1
+    path: Assets/Scenes/4.unity
+    guid: e6e132a96d245a046b0d7d2688af3818
+  - enabled: 1
+    path: Assets/Scenes/5.unity
+    guid: ff42966a5081b61448bb981f5304fa76
+  - enabled: 1
+    path: Assets/Scenes/BattleGuide 3.unity
+    guid: 3840d06556ad14f4c84a7753f2d402cd
+  - enabled: 1
+    path: Assets/Scenes/BattleGuide 4.unity
+    guid: 34ccc7644c5ea7b4098b6dcce46eea52
   m_configObjects: {}
