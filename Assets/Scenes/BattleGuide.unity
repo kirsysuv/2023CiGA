@@ -919,7 +919,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentScene: BattleGuide
-  nextScene: InitScene
+  nextScene: _2
 --- !u!4 &1322605527
 Transform:
   m_ObjectHideFlags: 0

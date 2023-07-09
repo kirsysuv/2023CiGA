@@ -95,18 +95,15 @@ public class AudioManager : SingletonMonoBehaviour<AudioManager>
             Debug.LogError("不存在" + name + "音频");
             return;
         }
-        Debug.Log("1");
         if (Instance.audioDic[name].isPlaying)
         {
             return;
         }
-        Debug.Log("2");
         //直接播放
         if (isStopCurrent)
         {
             StopCurrent();
         }
-        Debug.Log("3");
         Instance.audioDic[name].loop = isLoop;
         Instance.audioDic[name].Play();
         Instance._current = name;

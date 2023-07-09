@@ -90,7 +90,7 @@ public class PlyaerCtl : MonoBehaviour
                 Debug.Log("²¥·Å¹¥»÷Boss¶¯»­");
 
                 //TODO ÌØÊâ¹¥»÷
-                GameObject.Find("BattleCtl").GetComponent<BattleCtl>().RestartScene();
+                GameObject.Find("BattleCtl").GetComponent<BattleCtl>().NextScene();
                 return;
             }
             if (!canTouch())

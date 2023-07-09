@@ -28,7 +28,7 @@ public class InitSceneUICtl : MonoBehaviour
     {
         AudioManager.PlayEffect(AudioManager.Effect_UIClick);
 
-        SceneTransition.Instance.StartFadeIn(Const.BattleGuideScene);
+        SceneTransition.Instance.StartFadeIn(Const.Conversation_1);
     }
 
     // Update is called once per frame

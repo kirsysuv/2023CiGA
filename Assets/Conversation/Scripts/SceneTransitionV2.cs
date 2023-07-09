@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 using DG.Tweening;
 using System;
 
-public class SceneTransitionV2 : SingletonMonoBehaviour<SceneTransition>
+public class SceneTransitionV2 : SingletonMonoBehaviour<SceneTransitionV2>
 {
     // Start is called before the first frame update
     public float fadeDuration = 2f;
@@ -14,7 +14,7 @@ public class SceneTransitionV2 : SingletonMonoBehaviour<SceneTransition>
 
     private void Start()
     {
-        DontDestroyOnLoad(gameObject);
+        //DontDestroyOnLoad(gameObject);
         // 获取 CanvasGroup 组件
         canvasGroup = GameObject.Find("DialogCanvasEngine").GetComponent<CanvasGroup>();
         //StartFadeIn(Const.BattleGuideScene);
