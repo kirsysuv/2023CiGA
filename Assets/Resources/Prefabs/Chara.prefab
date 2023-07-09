@@ -135,7 +135,7 @@ MonoBehaviour:
   blood: {fileID: 6189950438714118424}
   unDamagable: 0
   slash: {fileID: 1018905205447432, guid: 9d6a03e8d6b4de848bb92881ec061d9b, type: 3}
-  duration: 0.5
+  duration: 0.25
 --- !u!1 &1109317942947525984
 GameObject:
   m_ObjectHideFlags: 0

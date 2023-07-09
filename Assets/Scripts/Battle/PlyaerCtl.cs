@@ -125,6 +125,7 @@ public class PlyaerCtl : MonoBehaviour
                 //无敌状态下按下，可以进行特殊攻击
                 Debug.Log("播放攻击Boss动画");
 
+                touchCol=Touch.GetComponent<Collider2D>();
                 Bounds bounds1 = touchCol.bounds;
                 // 在碰撞体内创建一个盒状区域
                 Collider2D[] colliders1 = Physics2D.OverlapBoxAll(bounds1.center, bounds1.size, 0f);
