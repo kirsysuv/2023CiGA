@@ -663,7 +663,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4f7e0bf3a4031f47aac788ac6adfdee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SceneName: BattleGuide
+  SceneName: BattleGuide 1
 --- !u!225 &1392352169
 CanvasGroup:
   m_ObjectHideFlags: 0
