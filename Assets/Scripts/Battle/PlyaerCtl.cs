@@ -118,7 +118,7 @@ public class PlyaerCtl : MonoBehaviour
         {
             //Debug.Log("按下Touch" + GameObject.Find("BattleUI").GetComponent<BattleUICtl>().Energy);
 
-            if (unDamagable)
+            if (unDamagable && canTouch())
             {
                 //无敌状态下按下，可以进行特殊攻击
                 Debug.Log("播放攻击Boss动画");
@@ -136,7 +136,7 @@ public class PlyaerCtl : MonoBehaviour
                         AttackComplete();
                         GameObject.Find("Energy").GetComponent<Image>().DOFade(0, 0.1f);
                         GameObject slash = Instantiate(this.slash);
-                        slash.transform.parent = gameObject.transform;
+                        slash.transform.parent = collider.gameObject.transform;
                         slash.transform.position = collider.gameObject.transform.position;
                         slash.GetComponent<ParticleSystem>().Play();
                     }
