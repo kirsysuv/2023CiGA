@@ -95,6 +95,12 @@ public class AudioManager : SingletonMonoBehaviour<AudioManager>
             Debug.LogError("不存在" + name + "音频");
             return;
         }
+        if (isEffect)
+        {
+            Debug.Log("Effect");
+            Instance.audioDic[name].PlayOneShot(Instance.audioDic[name].clip);
+            return;
+        }
         if (Instance.audioDic[name].isPlaying)
         {
             return;
@@ -103,11 +109,6 @@ public class AudioManager : SingletonMonoBehaviour<AudioManager>
         if (isStopCurrent)
         {
             StopCurrent();
-        }
-        if (isEffect)
-        {
-            Debug.Log("Effect");
-            Instance.audioDic[name].Stop();
         }
         Instance.audioDic[name].loop = isLoop;
         Instance.audioDic[name].Play();

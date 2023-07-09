@@ -13,6 +13,9 @@ public class SceneTransition : SingletonMonoBehaviour<SceneTransition>
     AsyncOperation operation;
     private CanvasGroup canvasGroup;
 
+    public GameObject noise;
+    public GameObject fadeMask;
+
     private void Start()
     {
         DontDestroyOnLoad(gameObject);
@@ -23,11 +26,15 @@ public class SceneTransition : SingletonMonoBehaviour<SceneTransition>
 
     private void Update()
     {
-        if(operation != null)
+        if (operation != null)
         {
             if (operation.isDone)
             {
-                canvasGroup.DOFade(0, fadeDuration);
+                canvasGroup.DOFade(0, fadeDuration).OnComplete(() =>
+                {
+                    canvasGroup.alpha = 1;
+                });
+                fadeMask.SetActive(false);
                 operation = null;
             }
         }
@@ -36,6 +43,9 @@ public class SceneTransition : SingletonMonoBehaviour<SceneTransition>
     public void StartFadeIn(string name)
     {
         Debug.Log("开始Fade");
+        fadeMask.SetActive(true);
+        //noise.SetActive(false);
+
         // 初始化透明度为 0
         canvasGroup.alpha = 0;
 
