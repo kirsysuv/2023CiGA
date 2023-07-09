@@ -70,7 +70,12 @@ public class PlyaerCtl : MonoBehaviour
 
     public void Dead()
     {
-        GameObject.Find("BattleCtl").GetComponent<BattleCtl>().NextScene();
+
+        Image failImg = GameObject.Find("BattleUI").GetComponent<BattleUICtl>().FailImg;
+
+        failImg.DOFade(1, 1f).OnComplete(() => { GameObject.Find("BattleCtl").GetComponent<BattleCtl>().RestartScene(); });
+        //DOTween.Sequence().Append(failImg.DOFade(1, 1f)).Append(failImg.DOFade(0, 1f)).OnComplete(() => { GameObject.Find("BattleCtl").GetComponent<BattleCtl>().NextScene(); }).Play();
+
     }
 
     private void endUndamagable()

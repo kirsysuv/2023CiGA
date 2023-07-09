@@ -17,6 +17,7 @@ public class BattleUICtl : MonoBehaviour
     public Image low;
     public SpriteRenderer Touch;
     public bool canTouch;
+    public Image FailImg;
 
     public float ColdDownTime = 2.5f;
 
