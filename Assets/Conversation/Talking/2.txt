@@ -1,0 +1,43 @@
+:: StoryTitle
+Test2
+
+:: StoryData
+{
+ "ifid": "0368D95B-430F-4531-8711-B38AFC664789",
+ "format": "Entweedle",
+ "format-version": "1.1.1",
+ "startnode": "1",
+ "zoom": "1",
+ "start": "未命名片段"
+}
+
+:: UserScript [script]
+
+
+:: UserStylesheet [stylesheet]
+
+
+:: 未命名片段 [:Player START] {"position":"404,170","size":"100,100"}
+一团刺眼的光球？好亮，离我远一点。
+
+[[你好。]]
+[[早上好。]]
+[[你是......？]]
+
+:: 你好。 [:Player] {"position":"254,320","size":"100,100"}
+哈？
+
+[[阳光]]
+
+:: 早上好。 [:NotPlayer] {"position":"404,320","size":"100,100"}
+哈？
+
+[[阳光]]
+
+:: 你是......？ [:Player] {"position":"554,320","size":"100,100"}
+Kucha
+
+[[阳光]]
+
+:: 阳光 [END :Player] {"position":"340,474","size":"100,100"}
+今天早上的阳光很好啊。温柔且和煦，照在身上很舒服。
