@@ -14,6 +14,8 @@ public class BOSSScript : MonoBehaviour
     public bool isStarting = false;
     [Header("µ¯Ä»¹ÜÀíÆ÷")]
     public BulletControlManager BCM;
+
+    public GameObject bornAnimGameObject;
     private void Awake()
     {
         currentBossHealth = maxBossHealth;
@@ -55,6 +57,12 @@ public class BOSSScript : MonoBehaviour
     public void DecreasedBossHealth()
     {
         currentBossHealth = currentBossHealth - 1;
+        if (currentBossHealth == 1)
+        {
+            bornAnimGameObject.SetActive(true);
+        }
+
+
         if (currentBossHealth > 0)
         {
             ChangePhase();

@@ -189,7 +189,7 @@ public class PlyaerCtl : MonoBehaviour
                         AudioManager.PlayEffect(AudioManager.Effect_Change);
 
                         float currentPct = Energy / Max_Energy;
-                        Energy = math.min(Energy + 1000, Max_Energy);
+                        Energy = math.min(Energy + 334, Max_Energy);
                         float newPct = Energy / Max_Energy;
                         GameObject.Find("Energy").GetComponent<Image>().DOFade(newPct, 0.25f);
                         if (Energy == Max_Energy)
