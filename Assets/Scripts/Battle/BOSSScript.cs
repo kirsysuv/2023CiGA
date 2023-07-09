@@ -75,5 +75,6 @@ public class BOSSScript : MonoBehaviour
     {
         BCM.CloseAllPhase();
         //ÇÐ»»³¡¾°
+        GameObject.Find("Chara").GetComponent<PlyaerCtl>().Win();
     }
 }

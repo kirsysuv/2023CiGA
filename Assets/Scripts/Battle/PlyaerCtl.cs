@@ -90,10 +90,25 @@ public class PlyaerCtl : MonoBehaviour
             spriteRenderer.color = new Color(spriteRenderer.color.r, spriteRenderer.color.g, spriteRenderer.color.b, 1f);
         }
     }
-
+    public void AttackComplete()
+    {
+        Energy = 0;
+        if (Energy != Max_Energy)
+        {
+            unDamagable = false;
+            blinkSequence.Pause();
+            spriteRenderer.color = new Color(spriteRenderer.color.r, spriteRenderer.color.g, spriteRenderer.color.b, 1f);
+        }
+    }
     private bool canTouch()
     {
         return GameObject.Find("BattleUI").GetComponent<BattleUICtl>().canTouch;
+    }
+
+    public void Win()
+    {
+        unDamagable = true;
+        GameObject.Find("BattleCtl").GetComponent<BattleCtl>().NextScene();
     }
 
     private void Update()
@@ -117,14 +132,18 @@ public class PlyaerCtl : MonoBehaviour
                 {
                     if (collider.gameObject.tag == "Boss")
                     {
-
+                        collider.transform.parent.GetComponent<BOSSScript>().DecreasedBossHealth();
+                        AttackComplete();
+                        GameObject.Find("Energy").GetComponent<Image>().DOFade(0, 0.1f);
                     }
                 }
+
+                // TODO teshu gongji
                 GameObject slash = Instantiate(this.slash);
                 slash.transform.parent = transform;
 
-                //TODO 特殊攻击
-                GameObject.Find("BattleCtl").GetComponent<BattleCtl>().NextScene();
+                
+                
                 return;
             }
             if (!canTouch())
@@ -166,9 +185,9 @@ public class PlyaerCtl : MonoBehaviour
                         AudioManager.PlayEffect(AudioManager.Effect_Change);
 
                         float currentPct = Energy / Max_Energy;
-                        Energy = math.min(Energy + 200, Max_Energy);
+                        Energy = math.min(Energy + 1000, Max_Energy);
                         float newPct = Energy / Max_Energy;
-                        GameObject.Find("Energy").GetComponent<Image>().DOFade(newPct, 0.5f);
+                        GameObject.Find("Energy").GetComponent<Image>().DOFade(newPct, 0.25f);
                         if (Energy == Max_Energy)
                         {
                             Debug.Log("进入无敌状态");
