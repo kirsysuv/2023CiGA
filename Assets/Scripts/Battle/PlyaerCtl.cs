@@ -135,15 +135,17 @@ public class PlyaerCtl : MonoBehaviour
                         collider.transform.parent.GetComponent<BOSSScript>().DecreasedBossHealth();
                         AttackComplete();
                         GameObject.Find("Energy").GetComponent<Image>().DOFade(0, 0.1f);
+                        GameObject slash = Instantiate(this.slash);
+                        slash.transform.parent = gameObject.transform;
+                        slash.transform.position = collider.gameObject.transform.position;
+                        slash.GetComponent<ParticleSystem>().Play();
                     }
                 }
 
                 // TODO teshu gongji
-                GameObject slash = Instantiate(this.slash);
-                slash.transform.parent = transform;
 
-                
-                
+
+
                 return;
             }
             if (!canTouch())
