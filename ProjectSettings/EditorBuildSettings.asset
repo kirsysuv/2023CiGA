@@ -29,4 +29,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Tai_1 .5.unity
     guid: 88f5a66cac47fc741aa9db35acabb1c0
+  - enabled: 1
+    path: Assets/Scenes/BattleGuide 1.unity
+    guid: 2fdcc5ba4f072054691d317df75ada73
+  - enabled: 1
+    path: Assets/Scenes/BattleGuide 2.unity
+    guid: 18d01b7bc24dcd046a5f8b2c1dab5e80
   m_configObjects: {}
