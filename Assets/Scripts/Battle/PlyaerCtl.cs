@@ -117,7 +117,7 @@ public class PlyaerCtl : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.J) || (Input.GetKeyDown(KeyCode.Space)))
         {
-            Win();
+            //Win();
             //Debug.Log("°´ÏÂTouch" + GameObject.Find("BattleUI").GetComponent<BattleUICtl>().Energy);
 
             if (unDamagable && canTouch())
@@ -145,12 +145,9 @@ public class PlyaerCtl : MonoBehaviour
                         slash.GetComponent<ParticleSystem>().Play();
                     }
                 }
+               // TODO teshu gongji
 
-                // TODO teshu gongji
-
-
-
-                return;
+            
             }
             if (!canTouch())
             {
