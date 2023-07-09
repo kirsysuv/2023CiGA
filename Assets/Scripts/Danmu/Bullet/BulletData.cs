@@ -14,6 +14,7 @@ public class BulletData
     public Color color;
     public float DelayTime = 0;
     public float CenterDis = 0; // 与发射点的距离
+    public float SpecialChance = 1f;
     //是否是平行弹
     public bool isParallel;
     //平行距离
@@ -42,7 +43,7 @@ public class BulletData
         this.color = color;
     }
 
-    public void SetValue(Vector3 Position, Quaternion direction, int Count, float LifeTime, float Speed, float Angle, float Distance, Color color, float InvokeTime, float CenterDis, bool isParallel, float parallelDistance)
+    public void SetValue(Vector3 Position, Quaternion direction, int Count, float LifeTime, float Speed, float Angle, float Distance, Color color, float InvokeTime, float CenterDis, bool isParallel, float parallelDistance,float SpecialChance)
     {
         this.Position = Position;
         this.direction = direction;
@@ -56,6 +57,7 @@ public class BulletData
         this.CenterDis = CenterDis;
         this.isParallel = isParallel;
         this.parallelDistance = parallelDistance;
+        this.SpecialChance = SpecialChance;
 
     }
 }

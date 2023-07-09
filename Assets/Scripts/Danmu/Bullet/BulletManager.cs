@@ -12,6 +12,8 @@ public class BulletManager : MonoBehaviour
         Instance = this;
     }
 
+    public Color SpecialBulletColor;
+
     public void ShootConfig(BulletData bulletData, BaseGameObjectPool pool)
     {
         //这个Num是用来控制角度的
@@ -61,6 +63,12 @@ public class BulletManager : MonoBehaviour
 
             num--;
             go.transform.position = go.transform.position + go.transform.up * bulletData.CenterDis;
+
+            if(Random.Range(0, 100) <= bulletData.SpecialChance)
+            {
+                go.GetComponent<Danmu>().gainEnergy = true;
+                go.GetComponent<SpriteRenderer>().color = SpecialBulletColor;
+            }
 
         }
     }

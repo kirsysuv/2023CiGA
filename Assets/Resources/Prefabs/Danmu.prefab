@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 8593328343431540813}
   - component: {fileID: 6834859618946708499}
   - component: {fileID: 7030598619686467787}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Danmu
   m_TagString: Danmu
   m_Icon: {fileID: 0}

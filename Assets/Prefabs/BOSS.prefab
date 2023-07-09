@@ -1,0 +1,1585 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &327987311926949401
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5172991498105398173}
+  - component: {fileID: 8297220467236227854}
+  m_Layer: 0
+  m_Name: LEVEL4
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5172991498105398173
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 327987311926949401}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 4274401478307244576}
+  - {fileID: 7398265927001704338}
+  - {fileID: 2270418438842821268}
+  m_Father: {fileID: 1116114025135394446}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8297220467236227854
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 327987311926949401}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 853d450f38fa6d54797aa0ad4050ce95, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PhaseBullet: []
+--- !u!1 &609125817352633653
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3012984924046854267}
+  - component: {fileID: 6706882541598922087}
+  m_Layer: 0
+  m_Name: LEVEL1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &3012984924046854267
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 609125817352633653}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1299004711990019026}
+  - {fileID: 5771990848855582223}
+  - {fileID: 486548437861216696}
+  m_Father: {fileID: 1116114025135394446}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6706882541598922087
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 609125817352633653}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 853d450f38fa6d54797aa0ad4050ce95, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PhaseBullet: []
+--- !u!1 &743972822050120586
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8491081642096793699}
+  - component: {fileID: 2179204640725023917}
+  m_Layer: 0
+  m_Name: Phase2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8491081642096793699
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 743972822050120586}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4588408273354380617}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2179204640725023917
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 743972822050120586}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 393469361ee79484a8983486d52cf0ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Count: 4
+  LifeTime: 6
+  CdTime: 0.075
+  Speed: 2.25
+  Angle: 90
+  Distance: 0
+  SelfRotation: 7
+  AddRotation: 0
+  CenterDis: 0
+  specialBulletChance: 3
+  BulletColor: {r: 0.4339623, g: 0, b: 0, a: 1}
+  R_Offset: {x: 0, y: 0, z: 0}
+  P_Offset: {x: 0, y: 0, z: 0}
+  DelayTime: 0
+  isZiJiJu: 0
+  ziJiJuZOffset: 0
+  isJianGeDan: 0
+  jianGeRestTime: 0
+  jianGeContinueTime: 0
+  jianGeTimer: 0
+  isBanning: 0
+  isParallel: 0
+  parallelDistance: 0
+  playerPos: {fileID: 0}
+  rotation: {x: 0, y: 0, z: 0, w: 0}
+--- !u!1 &1443918993041607313
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2270418438842821268}
+  - component: {fileID: 2364176341588643985}
+  - component: {fileID: 6694250335679593908}
+  m_Layer: 0
+  m_Name: Phase3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2270418438842821268
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1443918993041607313}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5172991498105398173}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2364176341588643985
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1443918993041607313}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 393469361ee79484a8983486d52cf0ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Count: 4
+  LifeTime: 6
+  CdTime: 0.075
+  Speed: 2.25
+  Angle: 90
+  Distance: 0
+  SelfRotation: 7
+  AddRotation: 0.025
+  CenterDis: 0
+  specialBulletChance: 3
+  BulletColor: {r: 0.4339623, g: 0, b: 0, a: 1}
+  R_Offset: {x: 0, y: 0, z: 0}
+  P_Offset: {x: 0, y: 0, z: 0}
+  DelayTime: 0
+  isZiJiJu: 0
+  ziJiJuZOffset: 0
+  isJianGeDan: 0
+  jianGeRestTime: 0
+  jianGeContinueTime: 0
+  jianGeTimer: 0
+  isBanning: 0
+  isParallel: 0
+  parallelDistance: 0
+  playerPos: {fileID: 0}
+  rotation: {x: 0, y: 0, z: 0, w: 0}
+--- !u!114 &6694250335679593908
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1443918993041607313}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 393469361ee79484a8983486d52cf0ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Count: 6
+  LifeTime: 5
+  CdTime: 0.75
+  Speed: 2.25
+  Angle: 60
+  Distance: 0
+  SelfRotation: 40
+  AddRotation: 0.05
+  CenterDis: 0
+  specialBulletChance: 3
+  BulletColor: {r: 0.4339623, g: 0, b: 0, a: 1}
+  R_Offset: {x: 0, y: 0, z: 0}
+  P_Offset: {x: 0, y: 0, z: 0}
+  DelayTime: 0
+  isZiJiJu: 0
+  ziJiJuZOffset: 0
+  isJianGeDan: 0
+  jianGeRestTime: 0
+  jianGeContinueTime: 0
+  jianGeTimer: 0
+  isBanning: 0
+  isParallel: 0
+  parallelDistance: 0
+  playerPos: {fileID: 0}
+  rotation: {x: 0, y: 0, z: 0, w: 0}
+--- !u!1 &3956371952105616705
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7398265927001704338}
+  - component: {fileID: 4351980442353571095}
+  - component: {fileID: 3900629514479844385}
+  - component: {fileID: 1455541423231100554}
+  - component: {fileID: 6311817188383629868}
+  m_Layer: 0
+  m_Name: Phase2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7398265927001704338
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3956371952105616705}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5172991498105398173}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4351980442353571095
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3956371952105616705}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 393469361ee79484a8983486d52cf0ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Count: 4
+  LifeTime: 9
+  CdTime: 0.25
+  Speed: 1.75
+  Angle: 90
+  Distance: 0
+  SelfRotation: 7
+  AddRotation: 0
+  CenterDis: 0
+  specialBulletChance: 3
+  BulletColor: {r: 0.4339623, g: 0, b: 0, a: 1}
+  R_Offset: {x: 0, y: 0, z: 0}
+  P_Offset: {x: 9.6, y: 0, z: 0}
+  DelayTime: 0
+  isZiJiJu: 0
+  ziJiJuZOffset: 0
+  isJianGeDan: 0
+  jianGeRestTime: 0
+  jianGeContinueTime: 0
+  jianGeTimer: 0
+  isBanning: 0
+  isParallel: 0
+  parallelDistance: 0
+  playerPos: {fileID: 0}
+  rotation: {x: 0, y: 0, z: 0, w: 0}
+--- !u!114 &3900629514479844385
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3956371952105616705}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 393469361ee79484a8983486d52cf0ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Count: 4
+  LifeTime: 9
+  CdTime: 0.25
+  Speed: 1.75
+  Angle: 90
+  Distance: 0
+  SelfRotation: 7
+  AddRotation: 0
+  CenterDis: 0
+  specialBulletChance: 3
+  BulletColor: {r: 0.4339623, g: 0, b: 0, a: 1}
+  R_Offset: {x: 0, y: 0, z: 0}
+  P_Offset: {x: -9.6, y: 0, z: 0}
+  DelayTime: 0
+  isZiJiJu: 0
+  ziJiJuZOffset: 0
+  isJianGeDan: 0
+  jianGeRestTime: 0
+  jianGeContinueTime: 0
+  jianGeTimer: 0
+  isBanning: 0
+  isParallel: 0
+  parallelDistance: 0
+  playerPos: {fileID: 0}
+  rotation: {x: 0, y: 0, z: 0, w: 0}
+--- !u!114 &1455541423231100554
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3956371952105616705}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 393469361ee79484a8983486d52cf0ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Count: 4
+  LifeTime: 9
+  CdTime: 0.25
+  Speed: 1.75
+  Angle: 90
+  Distance: 0
+  SelfRotation: 7
+  AddRotation: 0
+  CenterDis: 0
+  specialBulletChance: 3
+  BulletColor: {r: 0.4339623, g: 0, b: 0, a: 1}
+  R_Offset: {x: 0, y: 0, z: 0}
+  P_Offset: {x: 9.6, y: -10.8, z: 0}
+  DelayTime: 0
+  isZiJiJu: 0
+  ziJiJuZOffset: 0
+  isJianGeDan: 0
+  jianGeRestTime: 0
+  jianGeContinueTime: 0
+  jianGeTimer: 0
+  isBanning: 0
+  isParallel: 0
+  parallelDistance: 0
+  playerPos: {fileID: 0}
+  rotation: {x: 0, y: 0, z: 0, w: 0}
+--- !u!114 &6311817188383629868
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3956371952105616705}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 393469361ee79484a8983486d52cf0ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Count: 4
+  LifeTime: 9
+  CdTime: 0.25
+  Speed: 1.75
+  Angle: 90
+  Distance: 0
+  SelfRotation: 7
+  AddRotation: 0
+  CenterDis: 0
+  specialBulletChance: 3
+  BulletColor: {r: 0.4339623, g: 0, b: 0, a: 1}
+  R_Offset: {x: 0, y: 0, z: 0}
+  P_Offset: {x: -9.6, y: -10.8, z: 0}
+  DelayTime: 0
+  isZiJiJu: 0
+  ziJiJuZOffset: 0
+  isJianGeDan: 0
+  jianGeRestTime: 0
+  jianGeContinueTime: 0
+  jianGeTimer: 0
+  isBanning: 0
+  isParallel: 0
+  parallelDistance: 0
+  playerPos: {fileID: 0}
+  rotation: {x: 0, y: 0, z: 0, w: 0}
+--- !u!1 &4491239439981543503
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 9179309344738377084}
+  - component: {fileID: 1618135637827841587}
+  m_Layer: 0
+  m_Name: LEVEL2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &9179309344738377084
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4491239439981543503}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 2370392533149708330}
+  - {fileID: 4152232349262720096}
+  - {fileID: 1482967548461264448}
+  m_Father: {fileID: 1116114025135394446}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1618135637827841587
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4491239439981543503}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 853d450f38fa6d54797aa0ad4050ce95, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PhaseBullet: []
+--- !u!1 &5903206717799242556
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1299004711990019026}
+  - component: {fileID: 4218549875550831976}
+  - component: {fileID: 123821296135773564}
+  m_Layer: 0
+  m_Name: Phase1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1299004711990019026
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5903206717799242556}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3012984924046854267}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4218549875550831976
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5903206717799242556}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 393469361ee79484a8983486d52cf0ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Count: 6
+  LifeTime: 5
+  CdTime: 0.5
+  Speed: 2.25
+  Angle: 60
+  Distance: 0
+  SelfRotation: 15
+  AddRotation: 0
+  CenterDis: 0
+  specialBulletChance: 4
+  BulletColor: {r: 0.4339623, g: 0, b: 0, a: 1}
+  R_Offset: {x: 0, y: 0, z: 0}
+  P_Offset: {x: 0, y: 0, z: 0}
+  DelayTime: 0
+  isZiJiJu: 0
+  ziJiJuZOffset: 0
+  isJianGeDan: 0
+  jianGeRestTime: 0
+  jianGeContinueTime: 0
+  jianGeTimer: 0
+  isBanning: 0
+  isParallel: 0
+  parallelDistance: 0
+  playerPos: {fileID: 0}
+  rotation: {x: 0, y: 0, z: 0, w: 0}
+--- !u!114 &123821296135773564
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5903206717799242556}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 393469361ee79484a8983486d52cf0ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Count: 1
+  LifeTime: 5
+  CdTime: 1
+  Speed: 2
+  Angle: 0
+  Distance: 0
+  SelfRotation: 0
+  AddRotation: 0
+  CenterDis: 0
+  specialBulletChance: 30
+  BulletColor: {r: 0.4339623, g: 0, b: 0, a: 1}
+  R_Offset: {x: 0, y: 0, z: 0}
+  P_Offset: {x: 0, y: 0, z: 0}
+  DelayTime: 0
+  isZiJiJu: 1
+  ziJiJuZOffset: 0
+  isJianGeDan: 0
+  jianGeRestTime: 0
+  jianGeContinueTime: 0
+  jianGeTimer: 0
+  isBanning: 0
+  isParallel: 0
+  parallelDistance: 0
+  playerPos: {fileID: 0}
+  rotation: {x: 0, y: 0, z: 0, w: 0}
+--- !u!1 &6076421558817863377
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5771990848855582223}
+  - component: {fileID: 8946411336699075616}
+  - component: {fileID: 7124050023759408601}
+  m_Layer: 0
+  m_Name: Phase2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5771990848855582223
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6076421558817863377}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3012984924046854267}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8946411336699075616
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6076421558817863377}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 393469361ee79484a8983486d52cf0ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Count: 9
+  LifeTime: 5
+  CdTime: 0.5
+  Speed: 2.25
+  Angle: 40
+  Distance: 0
+  SelfRotation: 25
+  AddRotation: 0
+  CenterDis: 0
+  specialBulletChance: 3
+  BulletColor: {r: 0.4339623, g: 0, b: 0, a: 1}
+  R_Offset: {x: 0, y: 0, z: 0}
+  P_Offset: {x: 0, y: 0, z: 0}
+  DelayTime: 0
+  isZiJiJu: 0
+  ziJiJuZOffset: 0
+  isJianGeDan: 0
+  jianGeRestTime: 0
+  jianGeContinueTime: 0
+  jianGeTimer: 0
+  isBanning: 0
+  isParallel: 0
+  parallelDistance: 0
+  playerPos: {fileID: 0}
+  rotation: {x: 0, y: 0, z: 0, w: 0}
+--- !u!114 &7124050023759408601
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6076421558817863377}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 393469361ee79484a8983486d52cf0ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Count: 1
+  LifeTime: 5
+  CdTime: 0.5
+  Speed: 2
+  Angle: 0
+  Distance: 0
+  SelfRotation: 0
+  AddRotation: 0
+  CenterDis: 0
+  specialBulletChance: 15
+  BulletColor: {r: 0.4339623, g: 0, b: 0, a: 1}
+  R_Offset: {x: 0, y: 0, z: 0}
+  P_Offset: {x: 0, y: 0, z: 0}
+  DelayTime: 0
+  isZiJiJu: 1
+  ziJiJuZOffset: 0
+  isJianGeDan: 0
+  jianGeRestTime: 0
+  jianGeContinueTime: 0
+  jianGeTimer: 0
+  isBanning: 0
+  isParallel: 0
+  parallelDistance: 0
+  playerPos: {fileID: 0}
+  rotation: {x: 0, y: 0, z: 0, w: 0}
+--- !u!1 &6488025001514925264
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1482967548461264448}
+  - component: {fileID: 6428057801261792137}
+  - component: {fileID: 9168854788963660883}
+  m_Layer: 0
+  m_Name: Phase3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1482967548461264448
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6488025001514925264}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 9179309344738377084}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6428057801261792137
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6488025001514925264}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 393469361ee79484a8983486d52cf0ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Count: 6
+  LifeTime: 5
+  CdTime: 0.25
+  Speed: 2.25
+  Angle: 60
+  Distance: 0
+  SelfRotation: 30
+  AddRotation: 0
+  CenterDis: 0
+  specialBulletChance: 3
+  BulletColor: {r: 0.4339623, g: 0, b: 0, a: 1}
+  R_Offset: {x: 0, y: 0, z: 0}
+  P_Offset: {x: 0, y: 0, z: 0}
+  DelayTime: 0
+  isZiJiJu: 0
+  ziJiJuZOffset: 0
+  isJianGeDan: 0
+  jianGeRestTime: 0
+  jianGeContinueTime: 0
+  jianGeTimer: 0
+  isBanning: 0
+  isParallel: 0
+  parallelDistance: 0
+  playerPos: {fileID: 0}
+  rotation: {x: 0, y: 0, z: 0, w: 0}
+--- !u!114 &9168854788963660883
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6488025001514925264}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 393469361ee79484a8983486d52cf0ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Count: 6
+  LifeTime: 5
+  CdTime: 0.25
+  Speed: 2.25
+  Angle: 60
+  Distance: 0
+  SelfRotation: 45
+  AddRotation: 0
+  CenterDis: 0
+  specialBulletChance: 3
+  BulletColor: {r: 0.4339623, g: 0, b: 0, a: 1}
+  R_Offset: {x: 0, y: 0, z: 0}
+  P_Offset: {x: 0, y: 0, z: 0}
+  DelayTime: 0
+  isZiJiJu: 0
+  ziJiJuZOffset: 0
+  isJianGeDan: 0
+  jianGeRestTime: 0
+  jianGeContinueTime: 0
+  jianGeTimer: 0
+  isBanning: 0
+  isParallel: 0
+  parallelDistance: 0
+  playerPos: {fileID: 0}
+  rotation: {x: 0, y: 0, z: 0, w: 0}
+--- !u!1 &6743055774414415695
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1116114025135394446}
+  - component: {fileID: 1470079530472253516}
+  - component: {fileID: 1279506483736517548}
+  m_Layer: 0
+  m_Name: BOSS
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1116114025135394446
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6743055774414415695}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 4.36, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 3012984924046854267}
+  - {fileID: 9179309344738377084}
+  - {fileID: 4588408273354380617}
+  - {fileID: 5172991498105398173}
+  m_Father: {fileID: 0}
+  m_RootOrder: 14
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &1470079530472253516
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6743055774414415695}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
+  m_Color: {r: 0, g: 0.08616829, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!114 &1279506483736517548
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6743055774414415695}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8d963dca98e2d64f8ef6a15a16cc69a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxBossHealth: 3
+  currentBossHealth: 0
+  danmuStartTime: 1.5
+  startTimer: 0
+  isStarting: 0
+  BCM: {fileID: 0}
+--- !u!1 &7012845423386721160
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3123363589586911792}
+  - component: {fileID: 1846311946433146478}
+  - component: {fileID: 4021787313748570248}
+  m_Layer: 0
+  m_Name: Phase3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3123363589586911792
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7012845423386721160}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4588408273354380617}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1846311946433146478
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7012845423386721160}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 393469361ee79484a8983486d52cf0ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Count: 4
+  LifeTime: 6
+  CdTime: 0.075
+  Speed: 2.25
+  Angle: 90
+  Distance: 0
+  SelfRotation: 7
+  AddRotation: 0.025
+  CenterDis: 0
+  specialBulletChance: 3
+  BulletColor: {r: 0.4339623, g: 0, b: 0, a: 1}
+  R_Offset: {x: 0, y: 0, z: 0}
+  P_Offset: {x: 0, y: 0, z: 0}
+  DelayTime: 0
+  isZiJiJu: 0
+  ziJiJuZOffset: 0
+  isJianGeDan: 0
+  jianGeRestTime: 0
+  jianGeContinueTime: 0
+  jianGeTimer: 0
+  isBanning: 0
+  isParallel: 0
+  parallelDistance: 0
+  playerPos: {fileID: 0}
+  rotation: {x: 0, y: 0, z: 0, w: 0}
+--- !u!114 &4021787313748570248
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7012845423386721160}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 393469361ee79484a8983486d52cf0ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Count: 6
+  LifeTime: 5
+  CdTime: 0.75
+  Speed: 2.25
+  Angle: 60
+  Distance: 0
+  SelfRotation: 40
+  AddRotation: 0.05
+  CenterDis: 0
+  specialBulletChance: 3
+  BulletColor: {r: 0.4339623, g: 0, b: 0, a: 1}
+  R_Offset: {x: 0, y: 0, z: 0}
+  P_Offset: {x: 0, y: 0, z: 0}
+  DelayTime: 0
+  isZiJiJu: 0
+  ziJiJuZOffset: 0
+  isJianGeDan: 0
+  jianGeRestTime: 0
+  jianGeContinueTime: 0
+  jianGeTimer: 0
+  isBanning: 0
+  isParallel: 0
+  parallelDistance: 0
+  playerPos: {fileID: 0}
+  rotation: {x: 0, y: 0, z: 0, w: 0}
+--- !u!1 &7188841405657138863
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4152232349262720096}
+  - component: {fileID: 479339381050261477}
+  m_Layer: 0
+  m_Name: Phase2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4152232349262720096
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7188841405657138863}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 9179309344738377084}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &479339381050261477
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7188841405657138863}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 393469361ee79484a8983486d52cf0ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Count: 6
+  LifeTime: 5
+  CdTime: 0.4
+  Speed: 2.25
+  Angle: 60
+  Distance: 0
+  SelfRotation: 25
+  AddRotation: 0.05
+  CenterDis: 0
+  specialBulletChance: 3
+  BulletColor: {r: 0.4339623, g: 0, b: 0, a: 1}
+  R_Offset: {x: 0, y: 0, z: 0}
+  P_Offset: {x: 0, y: 0, z: 0}
+  DelayTime: 0
+  isZiJiJu: 0
+  ziJiJuZOffset: 0
+  isJianGeDan: 0
+  jianGeRestTime: 0
+  jianGeContinueTime: 0
+  jianGeTimer: 0
+  isBanning: 0
+  isParallel: 0
+  parallelDistance: 0
+  playerPos: {fileID: 0}
+  rotation: {x: 0, y: 0, z: 0, w: 0}
+--- !u!1 &7209982725584122494
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 486548437861216696}
+  - component: {fileID: 4408659363642959595}
+  - component: {fileID: 5365199919943042601}
+  m_Layer: 0
+  m_Name: Phase3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &486548437861216696
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7209982725584122494}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3012984924046854267}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4408659363642959595
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7209982725584122494}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 393469361ee79484a8983486d52cf0ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Count: 12
+  LifeTime: 5
+  CdTime: 0.5
+  Speed: 2.25
+  Angle: 30
+  Distance: 0
+  SelfRotation: 35
+  AddRotation: 0
+  CenterDis: 0
+  specialBulletChance: 2
+  BulletColor: {r: 0.4339623, g: 0, b: 0, a: 1}
+  R_Offset: {x: 0, y: 0, z: 0}
+  P_Offset: {x: 0, y: 0, z: 0}
+  DelayTime: 0
+  isZiJiJu: 0
+  ziJiJuZOffset: 0
+  isJianGeDan: 0
+  jianGeRestTime: 0
+  jianGeContinueTime: 0
+  jianGeTimer: 0
+  isBanning: 0
+  isParallel: 0
+  parallelDistance: 0
+  playerPos: {fileID: 0}
+  rotation: {x: 0, y: 0, z: 0, w: 0}
+--- !u!114 &5365199919943042601
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7209982725584122494}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 393469361ee79484a8983486d52cf0ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Count: 1
+  LifeTime: 5
+  CdTime: 0.4
+  Speed: 2
+  Angle: 0
+  Distance: 0
+  SelfRotation: 0
+  AddRotation: 0
+  CenterDis: 0
+  specialBulletChance: 15
+  BulletColor: {r: 0.4339623, g: 0, b: 0, a: 1}
+  R_Offset: {x: 0, y: 0, z: 0}
+  P_Offset: {x: 0, y: 0, z: 0}
+  DelayTime: 0
+  isZiJiJu: 1
+  ziJiJuZOffset: 0
+  isJianGeDan: 0
+  jianGeRestTime: 0
+  jianGeContinueTime: 0
+  jianGeTimer: 0
+  isBanning: 0
+  isParallel: 0
+  parallelDistance: 0
+  playerPos: {fileID: 0}
+  rotation: {x: 0, y: 0, z: 0, w: 0}
+--- !u!1 &7273651423715812106
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4588408273354380617}
+  - component: {fileID: 5532505414768706301}
+  m_Layer: 0
+  m_Name: LEVEL3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &4588408273354380617
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7273651423715812106}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 4331666746646149024}
+  - {fileID: 8491081642096793699}
+  - {fileID: 3123363589586911792}
+  m_Father: {fileID: 1116114025135394446}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5532505414768706301
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7273651423715812106}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 853d450f38fa6d54797aa0ad4050ce95, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PhaseBullet: []
+--- !u!1 &7540790549480943437
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4331666746646149024}
+  - component: {fileID: 7882287149025123776}
+  m_Layer: 0
+  m_Name: Phase1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4331666746646149024
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7540790549480943437}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4588408273354380617}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7882287149025123776
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7540790549480943437}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 393469361ee79484a8983486d52cf0ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Count: 4
+  LifeTime: 6
+  CdTime: 0.1
+  Speed: 2.25
+  Angle: 90
+  Distance: 0
+  SelfRotation: 7
+  AddRotation: 0
+  CenterDis: 0
+  specialBulletChance: 3
+  BulletColor: {r: 0.4339623, g: 0, b: 0, a: 1}
+  R_Offset: {x: 0, y: 0, z: 0}
+  P_Offset: {x: 0, y: 0, z: 0}
+  DelayTime: 0
+  isZiJiJu: 0
+  ziJiJuZOffset: 0
+  isJianGeDan: 0
+  jianGeRestTime: 0
+  jianGeContinueTime: 0
+  jianGeTimer: 0
+  isBanning: 0
+  isParallel: 0
+  parallelDistance: 0
+  playerPos: {fileID: 0}
+  rotation: {x: 0, y: 0, z: 0, w: 0}
+--- !u!1 &8579053470866181677
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2370392533149708330}
+  - component: {fileID: 3779547651190630613}
+  - component: {fileID: 5950827896418573609}
+  - component: {fileID: 5543350801505443559}
+  m_Layer: 0
+  m_Name: Phase1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2370392533149708330
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8579053470866181677}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 9179309344738377084}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3779547651190630613
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8579053470866181677}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 393469361ee79484a8983486d52cf0ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Count: 6
+  LifeTime: 10
+  CdTime: 0.5
+  Speed: 2.25
+  Angle: 60
+  Distance: 0
+  SelfRotation: 15
+  AddRotation: 0
+  CenterDis: 0
+  specialBulletChance: 4
+  BulletColor: {r: 0.4339623, g: 0, b: 0, a: 1}
+  R_Offset: {x: 0, y: 0, z: 0}
+  P_Offset: {x: 0, y: 0, z: 0}
+  DelayTime: 0
+  isZiJiJu: 0
+  ziJiJuZOffset: 0
+  isJianGeDan: 0
+  jianGeRestTime: 0
+  jianGeContinueTime: 0
+  jianGeTimer: 0
+  isBanning: 0
+  isParallel: 0
+  parallelDistance: 0
+  playerPos: {fileID: 0}
+  rotation: {x: 0, y: 0, z: 0, w: 0}
+--- !u!114 &5950827896418573609
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8579053470866181677}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 393469361ee79484a8983486d52cf0ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Count: 1
+  LifeTime: 10
+  CdTime: 0.33
+  Speed: 2.25
+  Angle: 0
+  Distance: 0
+  SelfRotation: 0
+  AddRotation: 0
+  CenterDis: 0
+  specialBulletChance: 10
+  BulletColor: {r: 0.4339623, g: 0, b: 0, a: 1}
+  R_Offset: {x: 0, y: 0, z: 0}
+  P_Offset: {x: 9.6, y: 0, z: 0}
+  DelayTime: 0
+  isZiJiJu: 1
+  ziJiJuZOffset: 0
+  isJianGeDan: 1
+  jianGeRestTime: 3
+  jianGeContinueTime: 3
+  jianGeTimer: 0
+  isBanning: 1
+  isParallel: 0
+  parallelDistance: 0
+  playerPos: {fileID: 0}
+  rotation: {x: 0, y: 0, z: 0, w: 0}
+--- !u!114 &5543350801505443559
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8579053470866181677}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 393469361ee79484a8983486d52cf0ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Count: 1
+  LifeTime: 10
+  CdTime: 0.33
+  Speed: 2.25
+  Angle: 0
+  Distance: 0
+  SelfRotation: 0
+  AddRotation: 0
+  CenterDis: 0
+  specialBulletChance: 10
+  BulletColor: {r: 0.4339623, g: 0, b: 0, a: 1}
+  R_Offset: {x: 0, y: 0, z: 0}
+  P_Offset: {x: -9.6, y: 0, z: 0}
+  DelayTime: 0
+  isZiJiJu: 1
+  ziJiJuZOffset: 0
+  isJianGeDan: 1
+  jianGeRestTime: 3
+  jianGeContinueTime: 3
+  jianGeTimer: 0
+  isBanning: 0
+  isParallel: 0
+  parallelDistance: 0
+  playerPos: {fileID: 0}
+  rotation: {x: 0, y: 0, z: 0, w: 0}
+--- !u!1 &8838619988338834959
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4274401478307244576}
+  - component: {fileID: 6900368844064255766}
+  - component: {fileID: 6896058984095314343}
+  m_Layer: 0
+  m_Name: Phase1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4274401478307244576
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8838619988338834959}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5172991498105398173}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6900368844064255766
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8838619988338834959}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 393469361ee79484a8983486d52cf0ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Count: 4
+  LifeTime: 6
+  CdTime: 0.15
+  Speed: 2.25
+  Angle: 90
+  Distance: 0
+  SelfRotation: 7
+  AddRotation: 0
+  CenterDis: 0
+  specialBulletChance: 3
+  BulletColor: {r: 0.4339623, g: 0, b: 0, a: 1}
+  R_Offset: {x: 0, y: 0, z: 0}
+  P_Offset: {x: 0, y: 0, z: 0}
+  DelayTime: 0
+  isZiJiJu: 0
+  ziJiJuZOffset: 0
+  isJianGeDan: 0
+  jianGeRestTime: 0
+  jianGeContinueTime: 0
+  jianGeTimer: 0
+  isBanning: 0
+  isParallel: 0
+  parallelDistance: 0
+  playerPos: {fileID: 0}
+  rotation: {x: 0, y: 0, z: 0, w: 0}
+--- !u!114 &6896058984095314343
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8838619988338834959}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 393469361ee79484a8983486d52cf0ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Count: 4
+  LifeTime: 6
+  CdTime: 0.15
+  Speed: 2.25
+  Angle: 90
+  Distance: 0
+  SelfRotation: 7
+  AddRotation: 0
+  CenterDis: 0
+  specialBulletChance: 3
+  BulletColor: {r: 0.4339623, g: 0, b: 0, a: 1}
+  R_Offset: {x: 0, y: 0, z: 0}
+  P_Offset: {x: 0, y: -10.8, z: 0}
+  DelayTime: 0
+  isZiJiJu: 0
+  ziJiJuZOffset: 0
+  isJianGeDan: 1
+  jianGeRestTime: 5
+  jianGeContinueTime: 999
+  jianGeTimer: 0
+  isBanning: 1
+  isParallel: 0
+  parallelDistance: 0
+  playerPos: {fileID: 0}
+  rotation: {x: 0, y: 0, z: 0, w: 0}

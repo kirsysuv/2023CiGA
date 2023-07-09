@@ -16,6 +16,8 @@ public class BulletControl : MonoBehaviour
     public float AddRotation = 0; // 每帧自转角度增量
     public float CenterDis = 0; // 与发射点的距离
 
+    public float specialBulletChance = 1f;//特殊子弹概率
+
     public Color BulletColor = Color.white; //子弹的颜色
     public Vector3 R_Offset = Vector3.zero; //初始旋转的偏移量
     public Vector3 P_Offset = Vector3.zero;  //位置的偏移量
@@ -135,7 +137,7 @@ public class BulletControl : MonoBehaviour
             selfRotation *= q;
             BulletData bulletData = new BulletData();
 
-            bulletData.SetValue(transform.position + P_Offset, selfRotation, Count, LifeTime, Speed, Angle, Distance, BulletColor, DelayTime, CenterDis, isParallel, parallelDistance);
+            bulletData.SetValue(transform.position + P_Offset, selfRotation, Count, LifeTime, Speed, Angle, Distance, BulletColor, DelayTime, CenterDis, isParallel, parallelDistance, specialBulletChance);
             if (LimitI > CdTime * 50 || CdTime == 0)
             {
                 BulletManager.Instance.ShootConfig(bulletData, m_bullet1_pool);
@@ -151,7 +153,7 @@ public class BulletControl : MonoBehaviour
 
             BulletData bulletData = new BulletData();
 
-            bulletData.SetValue(transform.position + P_Offset, tempQuaternion, Count, LifeTime, Speed, Angle, Distance, BulletColor, DelayTime, CenterDis, isParallel, parallelDistance);
+            bulletData.SetValue(transform.position + P_Offset, tempQuaternion, Count, LifeTime, Speed, Angle, Distance, BulletColor, DelayTime, CenterDis, isParallel, parallelDistance, specialBulletChance);
             if (LimitI > CdTime * 50 || CdTime == 0)
             {
                 BulletManager.Instance.ShootConfig(bulletData, m_bullet1_pool);
