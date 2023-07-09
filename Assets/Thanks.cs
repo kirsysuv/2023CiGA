@@ -11,7 +11,7 @@ public class Thanks : MonoBehaviour
         DOTween.Sequence().AppendInterval(2f).OnComplete(() =>
         {
             SceneTransition.Instance.StartFadeIn("InitScene");
-        });
+        }).Play();
     }
 
     // Update is called once per frame
