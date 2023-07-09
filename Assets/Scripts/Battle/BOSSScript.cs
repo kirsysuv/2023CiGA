@@ -60,6 +60,7 @@ public class BOSSScript : MonoBehaviour
         if (currentBossHealth == 1)
         {
             bornAnimGameObject.SetActive(true);
+            bornAnimGameObject.GetComponent<Animator>().Play("BornAnim");
         }
 
 
